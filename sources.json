@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-04-05T20:14:02.612Z",
+  "updatedAt": "2026-04-05T20:57:26.973Z",
   "namespace": "skills-sh",
   "providers": {
     "official": {
@@ -144,7 +144,7 @@
         "studio": {
           "owner": "automattic",
           "repo": "studio",
-          "rev": "0421eb25a48a2cfca9fbb3cb008546c2d27ff8b7",
+          "rev": "77507b8a37480ef2378a61a2a11ecfd501ac688f",
           "sha256": ""
         }
       },
@@ -950,7 +950,7 @@
         "mastra": {
           "owner": "mastra-ai",
           "repo": "mastra",
-          "rev": "45cf9ac3312b47d5258a4dcd0d0b7f063223da35",
+          "rev": "036e30fc52ae82d740f556d9d3c2b855f4258ea4",
           "sha256": ""
         }
       },
@@ -1118,7 +1118,7 @@
         "agent-governance-toolkit": {
           "owner": "microsoft",
           "repo": "agent-governance-toolkit",
-          "rev": "d8ba8652960ed3c3641b4196009dcf81a7e57745",
+          "rev": "30efc570ef8d509234f7ff7bb39732461a6ac45b",
           "sha256": ""
         },
         "foundry-ai-solution-templates-creation": {
@@ -1702,7 +1702,7 @@
         "chat": {
           "owner": "vercel",
           "repo": "chat",
-          "rev": "7181a77b268f9e5219f94b28872919948ac46a00",
+          "rev": "dbdd2a7d3cbec9a10503aa88501675f4205a7669",
           "sha256": ""
         },
         "streamdown": {
