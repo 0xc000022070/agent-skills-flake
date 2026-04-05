@@ -1,0 +1,1984 @@
+{
+  "version": "1.0",
+  "updatedAt": "2026-04-05T20:14:02.612Z",
+  "namespace": "skills-sh",
+  "providers": {
+    "official": {
+      "anthropics": {
+        "skills": {
+          "owner": "anthropics",
+          "repo": "skills",
+          "rev": "98669c11ca63e9c81c11501e1437e5c47b556621",
+          "sha256": ""
+        },
+        "knowledge-work-plugins": {
+          "owner": "anthropics",
+          "repo": "knowledge-work-plugins",
+          "rev": "976999efd88480085bfcaf2afb894879011c08da",
+          "sha256": ""
+        },
+        "claude-code": {
+          "owner": "anthropics",
+          "repo": "claude-code",
+          "rev": "b543a256248ce5ff98804b8dfef4cd6247423d98",
+          "sha256": ""
+        },
+        "claude-plugins-official": {
+          "owner": "anthropics",
+          "repo": "claude-plugins-official",
+          "rev": "95380b3cd58f7fbf575ebda0fe291224ba028317",
+          "sha256": ""
+        },
+        "financial-services-plugins": {
+          "owner": "anthropics",
+          "repo": "financial-services-plugins",
+          "rev": "90d7a0c0af241d9a336e0c25af43b9c6d430d442",
+          "sha256": ""
+        },
+        "healthcare": {
+          "owner": "anthropics",
+          "repo": "healthcare",
+          "rev": "c382e9466083f3bfe8c3a5c5ac06c351e1f499bd",
+          "sha256": ""
+        },
+        "claude-agent-sdk-demos": {
+          "owner": "anthropics",
+          "repo": "claude-agent-sdk-demos",
+          "rev": "826b268506a5f3707623c9e6140b200befcbebae",
+          "sha256": ""
+        },
+        "life-sciences": {
+          "owner": "anthropics",
+          "repo": "life-sciences",
+          "rev": "f6f10ffc1f4fbc96cdccf46e4d1a4c0914a316a9",
+          "sha256": ""
+        },
+        "claude-cookbooks": {
+          "owner": "anthropics",
+          "repo": "claude-cookbooks",
+          "rev": "ca0dd33d4b55cbab037a4b8ad1a06a362e58b29f",
+          "sha256": ""
+        },
+        "anthropic-cookbook": {
+          "owner": "anthropics",
+          "repo": "anthropic-cookbook",
+          "rev": "ca0dd33d4b55cbab037a4b8ad1a06a362e58b29f",
+          "sha256": ""
+        },
+        "cookbook": {
+          "owner": "anthropics",
+          "repo": "cookbook",
+          "rev": "ca0dd33d4b55cbab037a4b8ad1a06a362e58b29f",
+          "sha256": ""
+        }
+      },
+      "apify": {
+        "agent-skills": {
+          "owner": "apify",
+          "repo": "agent-skills",
+          "rev": "8e101a05bcf8518158af4435935cc84db9bea041",
+          "sha256": ""
+        },
+        "awesome-skills": {
+          "owner": "apify",
+          "repo": "awesome-skills",
+          "rev": "c5b1c469caeedc133705a91c6b5d6041cfc4433a",
+          "sha256": ""
+        },
+        "apify-mcp-server": {
+          "owner": "apify",
+          "repo": "apify-mcp-server",
+          "rev": "999ce9eb1bac0fa32e131200eab93ad91da600d3",
+          "sha256": ""
+        }
+      },
+      "apollographql": {
+        "skills": {
+          "owner": "apollographql",
+          "repo": "skills",
+          "rev": "e1979d2f1e7c38cef58753b2bfd6fc9509101bdc",
+          "sha256": ""
+        }
+      },
+      "astronomer": {
+        "agents": {
+          "owner": "astronomer",
+          "repo": "agents",
+          "rev": "5c40209141e3905fe2a6fbe750398b9f7640fe0c",
+          "sha256": ""
+        }
+      },
+      "auth0": {
+        "agent-skills": {
+          "owner": "auth0",
+          "repo": "agent-skills",
+          "rev": "7eb7159b6f1eec9522249e28da49c476c23765bd",
+          "sha256": ""
+        }
+      },
+      "automattic": {
+        "agent-skills": {
+          "owner": "automattic",
+          "repo": "agent-skills",
+          "rev": "48d4aa21d0da0e7bda1c7ac155fef2e16b87aa25",
+          "sha256": ""
+        },
+        "wordpress-activitypub": {
+          "owner": "automattic",
+          "repo": "wordpress-activitypub",
+          "rev": "fc0595100ef29b6825e5ccb361c392be88eec1b5",
+          "sha256": ""
+        },
+        "wordpress-agent-skills": {
+          "owner": "automattic",
+          "repo": "wordpress-agent-skills",
+          "rev": "ea902bd8301564fa33e336c34114ab121f24c800",
+          "sha256": ""
+        },
+        "wp-calypso": {
+          "owner": "automattic",
+          "repo": "wp-calypso",
+          "rev": "9111dfc5979c2223523ff58467ce7a9be6d27e8b",
+          "sha256": ""
+        },
+        "studio": {
+          "owner": "automattic",
+          "repo": "studio",
+          "rev": "0421eb25a48a2cfca9fbb3cb008546c2d27ff8b7",
+          "sha256": ""
+        }
+      },
+      "axiomhq": {
+        "skills": {
+          "owner": "axiomhq",
+          "repo": "skills",
+          "rev": "b85f0efcd55ca3b2fc15e235f5a914a300c6c1a6",
+          "sha256": ""
+        },
+        "gilfoyle": {
+          "owner": "axiomhq",
+          "repo": "gilfoyle",
+          "rev": "403f93d34627fda41ce98163daa53c5da7cb2e38",
+          "sha256": ""
+        }
+      },
+      "base": {
+        "skills": {
+          "owner": "base",
+          "repo": "skills",
+          "rev": "f20d4300382b7ced1458e2ed277355db001a20de",
+          "sha256": ""
+        },
+        "base-skills": {
+          "owner": "base",
+          "repo": "base-skills",
+          "rev": "f20d4300382b7ced1458e2ed277355db001a20de",
+          "sha256": ""
+        },
+        "agent-apps": {
+          "owner": "base",
+          "repo": "agent-apps",
+          "rev": "394d659acc69be6e8261ccf842fc2964a0f045fb",
+          "sha256": ""
+        }
+      },
+      "better-auth": {
+        "skills": {
+          "owner": "better-auth",
+          "repo": "skills",
+          "rev": "6a1636950a1d7fc53602639ce7505a4a5d39c797",
+          "sha256": ""
+        },
+        "better-icons": {
+          "owner": "better-auth",
+          "repo": "better-icons",
+          "rev": "033316ecb8f4982235af4111a2257e80231f5ab1",
+          "sha256": ""
+        }
+      },
+      "bitwarden": {
+        "ai-plugins": {
+          "owner": "bitwarden",
+          "repo": "ai-plugins",
+          "rev": "a54507e92c984d687d1e4d5ce1afa6466343b83f",
+          "sha256": ""
+        },
+        "android": {
+          "owner": "bitwarden",
+          "repo": "android",
+          "rev": "61955d7cbe1546a4c467284b4a5491d4f0e47afa",
+          "sha256": ""
+        },
+        "clients": {
+          "owner": "bitwarden",
+          "repo": "clients",
+          "rev": "02696c0fa4041ae744b259f6ff7cbac45592a5b8",
+          "sha256": ""
+        }
+      },
+      "box": {},
+      "brave": {
+        "brave-search-skills": {
+          "owner": "brave",
+          "repo": "brave-search-skills",
+          "rev": "d195a3038dcff52d3d6148bdbc77a95fb79e0bc2",
+          "sha256": ""
+        }
+      },
+      "browser-use": {
+        "browser-use": {
+          "owner": "browser-use",
+          "repo": "browser-use",
+          "rev": "de14b9aa31d167696a7ea7185d71876dbd7e6c94",
+          "sha256": ""
+        }
+      },
+      "browserbase": {
+        "skills": {
+          "owner": "browserbase",
+          "repo": "skills",
+          "rev": "ddf8833dc400b46df968a614e109273836c376c6",
+          "sha256": ""
+        }
+      },
+      "callstackincubator": {
+        "agent-skills": {
+          "owner": "callstackincubator",
+          "repo": "agent-skills",
+          "rev": "d1834201a633f23b7603291a3d3e95812268fa96",
+          "sha256": ""
+        },
+        "agent-device": {
+          "owner": "callstackincubator",
+          "repo": "agent-device",
+          "rev": "72cc398585913ef5a752e5ab5d35ad527afee901",
+          "sha256": ""
+        },
+        "rozenite": {
+          "owner": "callstackincubator",
+          "repo": "rozenite",
+          "rev": "cb454d60498fb884d56bb3ae56fbf128ba0350f0",
+          "sha256": ""
+        },
+        "voltra": {
+          "owner": "callstackincubator",
+          "repo": "voltra",
+          "rev": "e65b72b247f3620753118775ce8594fed821f976",
+          "sha256": ""
+        },
+        "ai": {
+          "owner": "callstackincubator",
+          "repo": "ai",
+          "rev": "41ffcad33fbd9090ca3a4bbce78c1e687941e730",
+          "sha256": ""
+        },
+        "react-native-ai": {
+          "owner": "callstackincubator",
+          "repo": "react-native-ai",
+          "rev": "41ffcad33fbd9090ca3a4bbce78c1e687941e730",
+          "sha256": ""
+        },
+        "agent-react-devtools": {
+          "owner": "callstackincubator",
+          "repo": "agent-react-devtools",
+          "rev": "60e0006355ef567d1bcb4be9b07b236ec257d369",
+          "sha256": ""
+        },
+        "cordierite": {
+          "owner": "callstackincubator",
+          "repo": "cordierite",
+          "rev": "a1a6875cc1824dcc9e057c99aea2ac75ca2b7a90",
+          "sha256": ""
+        },
+        "react-native-harness": {
+          "owner": "callstackincubator",
+          "repo": "react-native-harness",
+          "rev": "bba4bd074c13b935d00e76d96bc0d2c57c5a1661",
+          "sha256": ""
+        }
+      },
+      "clerk": {
+        "skills": {
+          "owner": "clerk",
+          "repo": "skills",
+          "rev": "24f61a9e651dd655419bd2f63d3fc4aac1af6086",
+          "sha256": ""
+        }
+      },
+      "clickhouse": {
+        "agent-skills": {
+          "owner": "clickhouse",
+          "repo": "agent-skills",
+          "rev": "63c48e8e6c3049bd6a4d9c56e40b623a3d94bce1",
+          "sha256": ""
+        },
+        "clickhouse": {
+          "owner": "clickhouse",
+          "repo": "clickhouse",
+          "rev": "b17c2cf3b0217d5f70569d1b7feb31d10fdd0c42",
+          "sha256": ""
+        }
+      },
+      "cloudflare": {
+        "skills": {
+          "owner": "cloudflare",
+          "repo": "skills",
+          "rev": "22a32f5f10eedd4428b26597406804ddf43b747d",
+          "sha256": ""
+        },
+        "vinext": {
+          "owner": "cloudflare",
+          "repo": "vinext",
+          "rev": "ccb299ab79cbd0749614fc48ce7e1ebcf8e183ae",
+          "sha256": ""
+        },
+        "cloudflare-docs": {
+          "owner": "cloudflare",
+          "repo": "cloudflare-docs",
+          "rev": "476ec1881f78bc293f94601e8a283c1e63f756a8",
+          "sha256": ""
+        },
+        "sandbox-sdk": {
+          "owner": "cloudflare",
+          "repo": "sandbox-sdk",
+          "rev": "89ed48131049fad3278960240c4d96b16aca5dc4",
+          "sha256": ""
+        },
+        "workerd": {
+          "owner": "cloudflare",
+          "repo": "workerd",
+          "rev": "8011aff0656c92a8ca29a6c806d33abe5540a9f2",
+          "sha256": ""
+        },
+        "chanfana": {
+          "owner": "cloudflare",
+          "repo": "chanfana",
+          "rev": "d85b9730a8cdaa4e8bd198165d4ea5ee88ccfa18",
+          "sha256": ""
+        },
+        "moltworker": {
+          "owner": "cloudflare",
+          "repo": "moltworker",
+          "rev": "7b00c1d7292190f2327e93bdcc7a0eabb0a26123",
+          "sha256": ""
+        },
+        "kumo": {
+          "owner": "cloudflare",
+          "repo": "kumo",
+          "rev": "281e171862997ac234c37a2c4b87125e052ec37d",
+          "sha256": ""
+        }
+      },
+      "coderabbitai": {
+        "skills": {
+          "owner": "coderabbitai",
+          "repo": "skills",
+          "rev": "e1d42d7a2e0a736824117802b6e03228eadd52f1",
+          "sha256": ""
+        },
+        "claude-plugin": {
+          "owner": "coderabbitai",
+          "repo": "claude-plugin",
+          "rev": "8fbf7eb630000a5ec7cc3e7ce2d2703c8c119d0c",
+          "sha256": ""
+        }
+      },
+      "coinbase": {
+        "agentic-wallet-skills": {
+          "owner": "coinbase",
+          "repo": "agentic-wallet-skills",
+          "rev": "9a595bdccf7756f23fa95a96ab6a6b11a80ebbb2",
+          "sha256": ""
+        },
+        "cds": {
+          "owner": "coinbase",
+          "repo": "cds",
+          "rev": "9a3257328f2e34a34debf5e7581a87ceb9a08279",
+          "sha256": ""
+        }
+      },
+      "dagster-io": {
+        "erk": {
+          "owner": "dagster-io",
+          "repo": "erk",
+          "rev": "a6d6c1d063672158b1f8b863402483d3a6ee75c9",
+          "sha256": ""
+        },
+        "skills": {
+          "owner": "dagster-io",
+          "repo": "skills",
+          "rev": "786a255dbadd8f27f9cb3dba1aafb8047709cfa5",
+          "sha256": ""
+        },
+        "dagster-claude-plugins": {
+          "owner": "dagster-io",
+          "repo": "dagster-claude-plugins",
+          "rev": "786a255dbadd8f27f9cb3dba1aafb8047709cfa5",
+          "sha256": ""
+        },
+        "fake-driven-testing": {
+          "owner": "dagster-io",
+          "repo": "fake-driven-testing",
+          "rev": "2f84a13b0a7eda8407ecad978c297d30288ffeff",
+          "sha256": ""
+        }
+      },
+      "datadog-labs": {
+        "agent-skills": {
+          "owner": "datadog-labs",
+          "repo": "agent-skills",
+          "rev": "bc6db8869acbd26a88d7d7a7d51c90cdbb98f18f",
+          "sha256": ""
+        },
+        "pup": {
+          "owner": "datadog-labs",
+          "repo": "pup",
+          "rev": "600b8778d0f81b26a237e991387f18882085972d",
+          "sha256": ""
+        }
+      },
+      "dbt-labs": {
+        "dbt-agent-skills": {
+          "owner": "dbt-labs",
+          "repo": "dbt-agent-skills",
+          "rev": "b2360a9fc6a221b646b9b3c358885eba44979f28",
+          "sha256": ""
+        },
+        "dbt-mcp": {
+          "owner": "dbt-labs",
+          "repo": "dbt-mcp",
+          "rev": "d8218a6d30773e125e82730d86d38e3938215c79",
+          "sha256": ""
+        }
+      },
+      "denoland": {
+        "skills": {
+          "owner": "denoland",
+          "repo": "skills",
+          "rev": "1a4267f4fc60d75839d740ae39a7e0bb0170cf0b",
+          "sha256": ""
+        }
+      },
+      "elevenlabs": {
+        "skills": {
+          "owner": "elevenlabs",
+          "repo": "skills",
+          "rev": "cab396c70eb67ec83d7e764ab68e03c78cdf7230",
+          "sha256": ""
+        },
+        "packages": {
+          "owner": "elevenlabs",
+          "repo": "packages",
+          "rev": "2ca4fc0f9f4257c9f9e14ddf492b41691d2f2a8d",
+          "sha256": ""
+        }
+      },
+      "encoredev": {
+        "skills": {
+          "owner": "encoredev",
+          "repo": "skills",
+          "rev": "91fda02311c65b57c0f56d793c1aa01420083002",
+          "sha256": ""
+        }
+      },
+      "exploreomni": {
+        "omni-agent-skills": {
+          "owner": "exploreomni",
+          "repo": "omni-agent-skills",
+          "rev": "d19ddf5811300f0b20d2ae7b4f80c39bcf8e13a5",
+          "sha256": ""
+        },
+        "omni-cursor-plugin": {
+          "owner": "exploreomni",
+          "repo": "omni-cursor-plugin",
+          "rev": "b04f4ce7b31f52cff662350b1aa23016db89d325",
+          "sha256": ""
+        },
+        "omni-claude-skills": {
+          "owner": "exploreomni",
+          "repo": "omni-claude-skills",
+          "rev": "39dfe13a91923bdacfe9f14115c08cd812b0dff5",
+          "sha256": ""
+        }
+      },
+      "expo": {
+        "skills": {
+          "owner": "expo",
+          "repo": "skills",
+          "rev": "cef67e4da5200eba0934f3af09a98364447f5364",
+          "sha256": ""
+        },
+        "expo": {
+          "owner": "expo",
+          "repo": "expo",
+          "rev": "3317c9ad070766d7f0ce56de64b7d7660c2b8956",
+          "sha256": ""
+        }
+      },
+      "facebook": {
+        "react": {
+          "owner": "facebook",
+          "repo": "react",
+          "rev": "1b45e2439289fd8e094c44161c89e06c5488671e",
+          "sha256": ""
+        },
+        "hermes": {
+          "owner": "facebook",
+          "repo": "hermes",
+          "rev": "672b5c862c9ade6d8cbd92e247edb181d18e6407",
+          "sha256": ""
+        }
+      },
+      "figma": {
+        "mcp-server-guide": {
+          "owner": "figma",
+          "repo": "mcp-server-guide",
+          "rev": "500e8738438ed1204eaf23e61280d872f47534fd",
+          "sha256": ""
+        }
+      },
+      "firebase": {
+        "agent-skills": {
+          "owner": "firebase",
+          "repo": "agent-skills",
+          "rev": "babd65e64b4ede6febf4ebc7e74195cae0db661c",
+          "sha256": ""
+        },
+        "skills": {
+          "owner": "firebase",
+          "repo": "skills",
+          "rev": "babd65e64b4ede6febf4ebc7e74195cae0db661c",
+          "sha256": ""
+        },
+        "firebase-tools": {
+          "owner": "firebase",
+          "repo": "firebase-tools",
+          "rev": "feb366eeaf1fcc2d921837fd7327c168890ba16a",
+          "sha256": ""
+        },
+        "genkit": {
+          "owner": "firebase",
+          "repo": "genkit",
+          "rev": "fa614e9a885472fd651f1d1faeaef62a83af3bd9",
+          "sha256": ""
+        }
+      },
+      "firecrawl": {
+        "cli": {
+          "owner": "firecrawl",
+          "repo": "cli",
+          "rev": "0b9902f4a9341d686237f35af824978f971f3ae4",
+          "sha256": ""
+        },
+        "skills": {
+          "owner": "firecrawl",
+          "repo": "skills",
+          "rev": "4ab6e0fd99c6667163bc34173e3ed3a3fed75ebc",
+          "sha256": ""
+        },
+        "agent-skills": {
+          "owner": "firecrawl",
+          "repo": "agent-skills",
+          "rev": "cdc950d588af9bd5975698e4d6db3bff738c4ad0",
+          "sha256": ""
+        },
+        "ai-research-skills": {
+          "owner": "firecrawl",
+          "repo": "ai-research-skills",
+          "rev": "7cfa204ffb6db2ded22376eaf25f3072f3b02f96",
+          "sha256": ""
+        },
+        "firecrawl-cli": {
+          "owner": "firecrawl",
+          "repo": "firecrawl-cli",
+          "rev": "0b9902f4a9341d686237f35af824978f971f3ae4",
+          "sha256": ""
+        },
+        "firecrawl-claude-plugin": {
+          "owner": "firecrawl",
+          "repo": "firecrawl-claude-plugin",
+          "rev": "684b975c8cc6bd0fcfa96f787900bf87fffeef57",
+          "sha256": ""
+        },
+        "opencode-firecrawl": {
+          "owner": "firecrawl",
+          "repo": "opencode-firecrawl",
+          "rev": "a5a7939005ad67b0a7a03f495aa224f6e9d2bb20",
+          "sha256": ""
+        },
+        "firecrawl-cursor-plugin": {
+          "owner": "firecrawl",
+          "repo": "firecrawl-cursor-plugin",
+          "rev": "ba1fdb7655d6d5bed432f2c35fb0ec71533ef721",
+          "sha256": ""
+        }
+      },
+      "flutter": {
+        "skills": {
+          "owner": "flutter",
+          "repo": "skills",
+          "rev": "068a660b05f69ba3bdc4de98f9438b949ccd16da",
+          "sha256": ""
+        },
+        "genui": {
+          "owner": "flutter",
+          "repo": "genui",
+          "rev": "bba8a708d4e68af44bc62a633593687a669cfe61",
+          "sha256": ""
+        },
+        "website": {
+          "owner": "flutter",
+          "repo": "website",
+          "rev": "2836ccd2883baafff37ed221d37c1748f8a22100",
+          "sha256": ""
+        }
+      },
+      "getsentry": {
+        "skills": {
+          "owner": "getsentry",
+          "repo": "skills",
+          "rev": "df10050ac10ae0b922e1756c18e68fa5734b9a2e",
+          "sha256": ""
+        },
+        "sentry-for-ai": {
+          "owner": "getsentry",
+          "repo": "sentry-for-ai",
+          "rev": "d414035d685190d4bcb814b0c756469a098e9634",
+          "sha256": ""
+        },
+        "sentry-agent-skills": {
+          "owner": "getsentry",
+          "repo": "sentry-agent-skills",
+          "rev": "9f54eb021916a7cff2c04a9f4e4c1f9439f3202c",
+          "sha256": ""
+        },
+        "sentry": {
+          "owner": "getsentry",
+          "repo": "sentry",
+          "rev": "3393047e25e4b23f695ba96cbd31c86e5c61ce02",
+          "sha256": ""
+        },
+        "agent-skills": {
+          "owner": "getsentry",
+          "repo": "agent-skills",
+          "rev": "9f54eb021916a7cff2c04a9f4e4c1f9439f3202c",
+          "sha256": ""
+        },
+        "warden": {
+          "owner": "getsentry",
+          "repo": "warden",
+          "rev": "5a55064686836d7134f92a5f6a4db364ef5b7e1e",
+          "sha256": ""
+        },
+        "sentry-for-claude": {
+          "owner": "getsentry",
+          "repo": "sentry-for-claude",
+          "rev": "d414035d685190d4bcb814b0c756469a098e9634",
+          "sha256": ""
+        },
+        "sentry-skills": {
+          "owner": "getsentry",
+          "repo": "sentry-skills",
+          "rev": "df10050ac10ae0b922e1756c18e68fa5734b9a2e",
+          "sha256": ""
+        },
+        "xcodebuildmcp": {
+          "owner": "getsentry",
+          "repo": "xcodebuildmcp",
+          "rev": "b6f49dd0636846c474334e2949b947ed0ea41aad",
+          "sha256": ""
+        },
+        "cli": {
+          "owner": "getsentry",
+          "repo": "cli",
+          "rev": "d5806b4a6767980ed4ff5f4821740974b88f51b5",
+          "sha256": ""
+        },
+        "sentry-python": {
+          "owner": "getsentry",
+          "repo": "sentry-python",
+          "rev": "d93fc76a2c7ecbafe297bd3fde84578c0996ce27",
+          "sha256": ""
+        },
+        "sentry-javascript": {
+          "owner": "getsentry",
+          "repo": "sentry-javascript",
+          "rev": "c193c71a9e2b239173f057f5133fc891cbd97f4a",
+          "sha256": ""
+        },
+        "sentry-for-cursor": {
+          "owner": "getsentry",
+          "repo": "sentry-for-cursor",
+          "rev": "e436b5a0977d902407ba72c6ab8a01764dab2c5f",
+          "sha256": ""
+        },
+        "dotagents": {
+          "owner": "getsentry",
+          "repo": "dotagents",
+          "rev": "a2169f4c906ba010e4da154c92f5036c0ec7c348",
+          "sha256": ""
+        },
+        "webvitals.com": {
+          "owner": "getsentry",
+          "repo": "webvitals.com",
+          "rev": "a6de11929a1e3b8921d23ad627380640e5ac3863",
+          "sha256": ""
+        }
+      },
+      "github": {
+        "awesome-copilot": {
+          "owner": "github",
+          "repo": "awesome-copilot",
+          "rev": "0c3c5bbbfb2a7d57d36473a83fdbef1becc5053f",
+          "sha256": ""
+        },
+        "gh-aw": {
+          "owner": "github",
+          "repo": "gh-aw",
+          "rev": "221904826a36fed6f8389b2feb644373a1665909",
+          "sha256": ""
+        },
+        "copilot-plugins": {
+          "owner": "github",
+          "repo": "copilot-plugins",
+          "rev": "6fe19e8a352deb8c268c6bc066a843031dd1b6dc",
+          "sha256": ""
+        }
+      },
+      "google-gemini": {
+        "gemini-skills": {
+          "owner": "google-gemini",
+          "repo": "gemini-skills",
+          "rev": "5b655a47ac6d03a2d96d6e64ca051b6a7fe62296",
+          "sha256": ""
+        },
+        "gemini-cli": {
+          "owner": "google-gemini",
+          "repo": "gemini-cli",
+          "rev": "f86c465a24435960e54bf67bcdbf930a78109043",
+          "sha256": ""
+        },
+        "gemini-skill": {
+          "owner": "google-gemini",
+          "repo": "gemini-skill",
+          "rev": "5b655a47ac6d03a2d96d6e64ca051b6a7fe62296",
+          "sha256": ""
+        }
+      },
+      "google-labs-code": {
+        "stitch-skills": {
+          "owner": "google-labs-code",
+          "repo": "stitch-skills",
+          "rev": "6c0cbdb909b7d256c8b9b3854c8c8f87aab2c140",
+          "sha256": ""
+        },
+        "stitch-sdk": {
+          "owner": "google-labs-code",
+          "repo": "stitch-sdk",
+          "rev": "4055e6d606587fd77a6014cc12b833c71a18041a",
+          "sha256": ""
+        },
+        "jules-skills": {
+          "owner": "google-labs-code",
+          "repo": "jules-skills",
+          "rev": "7a76d3bfcf4258ee437d65b5d12e54b51c395de5",
+          "sha256": ""
+        }
+      },
+      "hashicorp": {
+        "agent-skills": {
+          "owner": "hashicorp",
+          "repo": "agent-skills",
+          "rev": "75a9aed3188b6a5a56a4648a4ff7869e0ff52c11",
+          "sha256": ""
+        },
+        "terraform-agent-kit": {
+          "owner": "hashicorp",
+          "repo": "terraform-agent-kit",
+          "rev": "75a9aed3188b6a5a56a4648a4ff7869e0ff52c11",
+          "sha256": ""
+        }
+      },
+      "huggingface": {
+        "skills": {
+          "owner": "huggingface",
+          "repo": "skills",
+          "rev": "25b4bb02b995e19625241deb7321d087053146cd",
+          "sha256": ""
+        },
+        "kernels": {
+          "owner": "huggingface",
+          "repo": "kernels",
+          "rev": "205a554bb3421a1aa67e941fe94d4418fa8bf0be",
+          "sha256": ""
+        },
+        "chat-ui": {
+          "owner": "huggingface",
+          "repo": "chat-ui",
+          "rev": "9aa2b8adc7a94b07c3a52a0b490e42219a808190",
+          "sha256": ""
+        },
+        "transformers": {
+          "owner": "huggingface",
+          "repo": "transformers",
+          "rev": "374d44d54adb1c5f52e68aff97d1675f56d657a8",
+          "sha256": ""
+        },
+        "huggingface_hub": {
+          "owner": "huggingface",
+          "repo": "huggingface_hub",
+          "rev": "bc30ecebe5bdeea7025b7b78c92bc23d321ecf28",
+          "sha256": ""
+        }
+      },
+      "kotlin": {
+        "kotlin-agent-skills": {
+          "owner": "kotlin",
+          "repo": "kotlin-agent-skills",
+          "rev": "c88c997250e220204406f95055b7fdaea6ee992b",
+          "sha256": ""
+        }
+      },
+      "langchain-ai": {
+        "langchain-skills": {
+          "owner": "langchain-ai",
+          "repo": "langchain-skills",
+          "rev": "9dd360ba9932526f401f15d48238fb710d4d6836",
+          "sha256": ""
+        },
+        "deepagents": {
+          "owner": "langchain-ai",
+          "repo": "deepagents",
+          "rev": "26647a346cd3c71ca223ad2dc17db812f7203b0f",
+          "sha256": ""
+        },
+        "langsmith-skills": {
+          "owner": "langchain-ai",
+          "repo": "langsmith-skills",
+          "rev": "0d5c6c13a345943d5eeddf276dba8e691043d0dc",
+          "sha256": ""
+        },
+        "skills-benchmarks": {
+          "owner": "langchain-ai",
+          "repo": "skills-benchmarks",
+          "rev": "c49886ac023bf6b198baa715b9b7e7e40c3a7b46",
+          "sha256": ""
+        },
+        "deepagentsjs": {
+          "owner": "langchain-ai",
+          "repo": "deepagentsjs",
+          "rev": "37a12fa57ed429e37030eb729e6399932d859dfe",
+          "sha256": ""
+        },
+        "lca-skills": {
+          "owner": "langchain-ai",
+          "repo": "lca-skills",
+          "rev": "93cefb7bb3d3f99bd9a8aeef3c3636c7126cfca9",
+          "sha256": ""
+        }
+      },
+      "langfuse": {
+        "skills": {
+          "owner": "langfuse",
+          "repo": "skills",
+          "rev": "d045623d8ff299f5b738c0fdd5396e475fbfa075",
+          "sha256": ""
+        },
+        "langfuse": {
+          "owner": "langfuse",
+          "repo": "langfuse",
+          "rev": "7928adfe3239be66d65cd76757466a360d0bb2f6",
+          "sha256": ""
+        }
+      },
+      "launchdarkly": {
+        "agent-skills": {
+          "owner": "launchdarkly",
+          "repo": "agent-skills",
+          "rev": "4fdba429afb6716c2f17e631dbf8725adc8281c0",
+          "sha256": ""
+        }
+      },
+      "livekit": {},
+      "makenotion": {
+        "claude-code-notion-plugin": {
+          "owner": "makenotion",
+          "repo": "claude-code-notion-plugin",
+          "rev": "9847f2aa1a15f25df35ed1fb7b4557dbb60cd651",
+          "sha256": ""
+        },
+        "skills": {
+          "owner": "makenotion",
+          "repo": "skills",
+          "rev": "d3f06e7a5f2efff2c91d3149eb0a2efdd5629e11",
+          "sha256": ""
+        },
+        "cursor-notion-plugin": {
+          "owner": "makenotion",
+          "repo": "cursor-notion-plugin",
+          "rev": "cf1324609edba6d617164f1dec138aeb43f26735",
+          "sha256": ""
+        },
+        "notion-cookbook": {
+          "owner": "makenotion",
+          "repo": "notion-cookbook",
+          "rev": "cb1ca6d231ddc452e4a3f9a5fb146623b26c0c71",
+          "sha256": ""
+        }
+      },
+      "mapbox": {
+        "mapbox-agent-skills": {
+          "owner": "mapbox",
+          "repo": "mapbox-agent-skills",
+          "rev": "11d93050c4ea1efe34492b840ff14feeda536c2c",
+          "sha256": ""
+        },
+        "mcp-devkit-server": {
+          "owner": "mapbox",
+          "repo": "mcp-devkit-server",
+          "rev": "8984c4f22c4d7b60447c1cc71d47cccc63f677d6",
+          "sha256": ""
+        }
+      },
+      "mastra-ai": {
+        "skills": {
+          "owner": "mastra-ai",
+          "repo": "skills",
+          "rev": "5d04dc00fe3b2a29d70995ce0f034d4f489d167f",
+          "sha256": ""
+        },
+        "mastra": {
+          "owner": "mastra-ai",
+          "repo": "mastra",
+          "rev": "45cf9ac3312b47d5258a4dcd0d0b7f063223da35",
+          "sha256": ""
+        }
+      },
+      "mcp-use": {
+        "mcp-use": {
+          "owner": "mcp-use",
+          "repo": "mcp-use",
+          "rev": "a4a84d9a666608b05376d87944c37cfdd2901d8a",
+          "sha256": ""
+        },
+        "skills": {
+          "owner": "mcp-use",
+          "repo": "skills",
+          "rev": "3bf0eaa4b007fe3215fc81ef1bc4f9ba4ceb1c1e",
+          "sha256": ""
+        }
+      },
+      "medusajs": {
+        "medusa-agent-skills": {
+          "owner": "medusajs",
+          "repo": "medusa-agent-skills",
+          "rev": "48385888e6fa424fd290f81bdf7a4e2d0b63649c",
+          "sha256": ""
+        },
+        "medusa-claude-plugins": {
+          "owner": "medusajs",
+          "repo": "medusa-claude-plugins",
+          "rev": "48385888e6fa424fd290f81bdf7a4e2d0b63649c",
+          "sha256": ""
+        }
+      },
+      "microsoft": {
+        "azure-skills": {
+          "owner": "microsoft",
+          "repo": "azure-skills",
+          "rev": "a6daef4dd35aa9c8968fe50518ecc21344c6478d",
+          "sha256": ""
+        },
+        "github-copilot-for-azure": {
+          "owner": "microsoft",
+          "repo": "github-copilot-for-azure",
+          "rev": "a3bdc6efa0e4036d469bbf5d821199a227a9e5cd",
+          "sha256": ""
+        },
+        "playwright-cli": {
+          "owner": "microsoft",
+          "repo": "playwright-cli",
+          "rev": "a0d5bfd4d9658073029d33f979ac5a027568caec",
+          "sha256": ""
+        },
+        "vscode": {
+          "owner": "microsoft",
+          "repo": "vscode",
+          "rev": "3ef1267f38b53e7373416c021b4061604600e5b0",
+          "sha256": ""
+        },
+        "skills": {
+          "owner": "microsoft",
+          "repo": "skills",
+          "rev": "d08c69c7f1c20025308f55ce4efd6ade6701ebda",
+          "sha256": ""
+        },
+        "playwright": {
+          "owner": "microsoft",
+          "repo": "playwright",
+          "rev": "c0cc9802afc5f50ada6c79d3c2f36330a8aadc9a",
+          "sha256": ""
+        },
+        "agent-skills": {
+          "owner": "microsoft",
+          "repo": "agent-skills",
+          "rev": "d08c69c7f1c20025308f55ce4efd6ade6701ebda",
+          "sha256": ""
+        },
+        "power-platform-skills": {
+          "owner": "microsoft",
+          "repo": "power-platform-skills",
+          "rev": "66a61c6cbbf00cfd06b296e9d7ab6db37b47f61a",
+          "sha256": ""
+        },
+        "agent-framework": {
+          "owner": "microsoft",
+          "repo": "agent-framework",
+          "rev": "d30103fee6b03e2322dc13d590ef43661692b7c9",
+          "sha256": ""
+        },
+        "powertoys": {
+          "owner": "microsoft",
+          "repo": "powertoys",
+          "rev": "1e1bd07087cdc526edee3d69bc2faae9b0a5f199",
+          "sha256": ""
+        },
+        "skills-for-fabric": {
+          "owner": "microsoft",
+          "repo": "skills-for-fabric",
+          "rev": "339c328dc507a0ff2235e79a70d7c175eb6cc281",
+          "sha256": ""
+        },
+        "vscode-copilot-chat": {
+          "owner": "microsoft",
+          "repo": "vscode-copilot-chat",
+          "rev": "b6d44c34264a268ffacdb490cd6199a49c33af8b",
+          "sha256": ""
+        },
+        "fabric-cli": {
+          "owner": "microsoft",
+          "repo": "fabric-cli",
+          "rev": "ae22b098d3aa68900cc33a915089a8735edb1d8b",
+          "sha256": ""
+        },
+        "ai-agents-for-beginners": {
+          "owner": "microsoft",
+          "repo": "ai-agents-for-beginners",
+          "rev": "4d697b4e85e346982ff56efcac0d1c6e979a76f1",
+          "sha256": ""
+        },
+        "hve-core": {
+          "owner": "microsoft",
+          "repo": "hve-core",
+          "rev": "84ddd5d6149871c41b04f7d11da6045feb151e20",
+          "sha256": ""
+        },
+        "skills-for-copilot-studio": {
+          "owner": "microsoft",
+          "repo": "skills-for-copilot-studio",
+          "rev": "815318123758fc5c8643231352221a727d63b815",
+          "sha256": ""
+        },
+        "work-iq": {
+          "owner": "microsoft",
+          "repo": "work-iq",
+          "rev": "55bc039b10a53b201d397501cfcf21f21a832a09",
+          "sha256": ""
+        },
+        "dataverse-skills": {
+          "owner": "microsoft",
+          "repo": "dataverse-skills",
+          "rev": "a6dda750ceefd2da3a0208bc6c67ba71143e5a7f",
+          "sha256": ""
+        },
+        "azure-devops-skills": {
+          "owner": "microsoft",
+          "repo": "azure-devops-skills",
+          "rev": "63598cadd8231c4e625b616e7ae5530917b01d58",
+          "sha256": ""
+        },
+        "vscode-cosmosdb": {
+          "owner": "microsoft",
+          "repo": "vscode-cosmosdb",
+          "rev": "f4db41bf3996373b167c81322c55c23e33fedc9f",
+          "sha256": ""
+        },
+        "rushstack": {
+          "owner": "microsoft",
+          "repo": "rushstack",
+          "rev": "981ef149cd9e1280286a459b1f50787a07b0524c",
+          "sha256": ""
+        },
+        "semantic-link-labs": {
+          "owner": "microsoft",
+          "repo": "semantic-link-labs",
+          "rev": "3eb8bb9f1f18d02b0553db989168f68b42dbaa38",
+          "sha256": ""
+        },
+        "agent-governance-toolkit": {
+          "owner": "microsoft",
+          "repo": "agent-governance-toolkit",
+          "rev": "d8ba8652960ed3c3641b4196009dcf81a7e57745",
+          "sha256": ""
+        },
+        "foundry-ai-solution-templates-creation": {
+          "owner": "microsoft",
+          "repo": "foundry-ai-solution-templates-creation",
+          "rev": "f39a20a6efad9e13b3e2f6233b1867b88931fadd",
+          "sha256": ""
+        },
+        "winappcli": {
+          "owner": "microsoft",
+          "repo": "winappcli",
+          "rev": "f2b0d321445c6bf92032808281404222ec6c396f",
+          "sha256": ""
+        }
+      },
+      "n8n-io": {
+        "n8n": {
+          "owner": "n8n-io",
+          "repo": "n8n",
+          "rev": "fb4c2631b214bd1e5e9e03292ac0d3bac73d3e2d",
+          "sha256": ""
+        }
+      },
+      "neondatabase": {
+        "agent-skills": {
+          "owner": "neondatabase",
+          "repo": "agent-skills",
+          "rev": "1304e290a0b24b3f46d60ee20e9f40271db9b41c",
+          "sha256": ""
+        },
+        "ai-rules": {
+          "owner": "neondatabase",
+          "repo": "ai-rules",
+          "rev": "eecefdc810e1c56163d7e0aed90f66c6f339ee0a",
+          "sha256": ""
+        },
+        "postgres-skills": {
+          "owner": "neondatabase",
+          "repo": "postgres-skills",
+          "rev": "0d9a967085c3bc137ab39ff9e3191c2eb3129d8c",
+          "sha256": ""
+        },
+        "neon-js": {
+          "owner": "neondatabase",
+          "repo": "neon-js",
+          "rev": "b00a8a5e67c8022c75a6042330009a7596f08b77",
+          "sha256": ""
+        },
+        "better-env": {
+          "owner": "neondatabase",
+          "repo": "better-env",
+          "rev": "3a5c77788c280f598142f9fcb2430304a6e25eb7",
+          "sha256": ""
+        },
+        "mcp-server-neon": {
+          "owner": "neondatabase",
+          "repo": "mcp-server-neon",
+          "rev": "96814b3668701b98a48a11adf829715f4441227e",
+          "sha256": ""
+        }
+      },
+      "nuxt": {
+        "ui": {
+          "owner": "nuxt",
+          "repo": "ui",
+          "rev": "b566b48e0829afb3055196997d60bce8d0d90d44",
+          "sha256": ""
+        }
+      },
+      "openai": {
+        "skills": {
+          "owner": "openai",
+          "repo": "skills",
+          "rev": "736f600bf6ecbc000c04f1d2710b990899f28903",
+          "sha256": ""
+        },
+        "openai-agents-python": {
+          "owner": "openai",
+          "repo": "openai-agents-python",
+          "rev": "7a3f6b70d1bd4e700f3a06547b673295fb52e74d",
+          "sha256": ""
+        },
+        "codex": {
+          "owner": "openai",
+          "repo": "codex",
+          "rev": "b5edeb98a0f3a7a0f43243f6ae06bc7de6cfacc0",
+          "sha256": ""
+        },
+        "openai-agents-js": {
+          "owner": "openai",
+          "repo": "openai-agents-js",
+          "rev": "7e102e29cc7c393818f075efb165c7ac505cbb6e",
+          "sha256": ""
+        },
+        "codex-plugin-cc": {
+          "owner": "openai",
+          "repo": "codex-plugin-cc",
+          "rev": "8e403f9d4b496b0b0aff50fa3673f889f6a22cb1",
+          "sha256": ""
+        },
+        "symphony": {
+          "owner": "openai",
+          "repo": "symphony",
+          "rev": "9e89dd9ff0a3eddb8813c77f633ca4534d6e14b2",
+          "sha256": ""
+        },
+        "plugins": {
+          "owner": "openai",
+          "repo": "plugins",
+          "rev": "f78e3ad49297672a905eb7afb6aa0cef34edc79e",
+          "sha256": ""
+        },
+        "openai-cookbook": {
+          "owner": "openai",
+          "repo": "openai-cookbook",
+          "rev": "a0f464bac03e6bcb4e666aeb489f2829d324c778",
+          "sha256": ""
+        }
+      },
+      "openshift": {
+        "hypershift": {
+          "owner": "openshift",
+          "repo": "hypershift",
+          "rev": "51af991f187e2d4fbbf9f576c1261a89e8696d6f",
+          "sha256": ""
+        },
+        "oc": {
+          "owner": "openshift",
+          "repo": "oc",
+          "rev": "075cd278d1e62cf49b266e157891967bda16079d",
+          "sha256": ""
+        },
+        "release-tests": {
+          "owner": "openshift",
+          "repo": "release-tests",
+          "rev": "5091014608d42e59be6b5caefe05429bc334fa53",
+          "sha256": ""
+        }
+      },
+      "planetscale": {
+        "database-skills": {
+          "owner": "planetscale",
+          "repo": "database-skills",
+          "rev": "b156f4ca73c03d0350438bfd042331aaef6eec77",
+          "sha256": ""
+        },
+        "vscode-agent-plugin": {
+          "owner": "planetscale",
+          "repo": "vscode-agent-plugin",
+          "rev": "9262fe6d0c7f5474ddd56bb9e8531705305922f3",
+          "sha256": ""
+        }
+      },
+      "posthog": {
+        "posthog": {
+          "owner": "posthog",
+          "repo": "posthog",
+          "rev": "95fad83babe22db565f95fa7bc0037af8620ef5b",
+          "sha256": ""
+        },
+        "posthog-for-claude": {
+          "owner": "posthog",
+          "repo": "posthog-for-claude",
+          "rev": "4122119322584efc7a3e483b9c1cc2e4903ebeec",
+          "sha256": ""
+        },
+        "skills": {
+          "owner": "posthog",
+          "repo": "skills",
+          "rev": "eec1eb0f7517ce0402ac225fe94ce72352d04563",
+          "sha256": ""
+        },
+        "ai-plugin": {
+          "owner": "posthog",
+          "repo": "ai-plugin",
+          "rev": "68fc96bf6cd11dd4793296a565e865ebe6aeb629",
+          "sha256": ""
+        },
+        "context-mill": {
+          "owner": "posthog",
+          "repo": "context-mill",
+          "rev": "ee0fa9b61855a76a182ca7e628925938789e994c",
+          "sha256": ""
+        }
+      },
+      "prisma": {
+        "skills": {
+          "owner": "prisma",
+          "repo": "skills",
+          "rev": "741a74fdafc1bf61fa208c2f73878be688cba263",
+          "sha256": ""
+        },
+        "cursor-plugin": {
+          "owner": "prisma",
+          "repo": "cursor-plugin",
+          "rev": "4584a0a9175ba74053d7ee946c6234d3369a5a33",
+          "sha256": ""
+        }
+      },
+      "pulumi": {
+        "agent-skills": {
+          "owner": "pulumi",
+          "repo": "agent-skills",
+          "rev": "b6214ca30c8f211e829c17a51d9b1ce152c5f260",
+          "sha256": ""
+        }
+      },
+      "pytorch": {
+        "pytorch": {
+          "owner": "pytorch",
+          "repo": "pytorch",
+          "rev": "43eaba0456680ba31f758708cc944aea029c6f0d",
+          "sha256": ""
+        }
+      },
+      "redis": {
+        "agent-skills": {
+          "owner": "redis",
+          "repo": "agent-skills",
+          "rev": "4eaff191fcb830b64b6ac05bb8ef0ee067c73a9f",
+          "sha256": ""
+        },
+        "redisinsight": {
+          "owner": "redis",
+          "repo": "redisinsight",
+          "rev": "b51e7c7d47cbb9dcbab27bb396136c45143b0ba5",
+          "sha256": ""
+        }
+      },
+      "remotion-dev": {
+        "skills": {
+          "owner": "remotion-dev",
+          "repo": "skills",
+          "rev": "d5d395582c6227249cec74f53ab79aca77a4ff16",
+          "sha256": ""
+        },
+        "remotion": {
+          "owner": "remotion-dev",
+          "repo": "remotion",
+          "rev": "364a3e3c778b42156ac60ada355340623eea3994",
+          "sha256": ""
+        }
+      },
+      "resend": {
+        "resend-skills": {
+          "owner": "resend",
+          "repo": "resend-skills",
+          "rev": "fd1cdfa385ae1937bd90d9e5762cacee2d2a480a",
+          "sha256": ""
+        },
+        "email-best-practices": {
+          "owner": "resend",
+          "repo": "email-best-practices",
+          "rev": "f4d7fbf9e747685057486a0cd5a17d74ace2eefe",
+          "sha256": ""
+        },
+        "react-email": {
+          "owner": "resend",
+          "repo": "react-email",
+          "rev": "961045a769f2d51e9fe5fbf4835710a04258094c",
+          "sha256": ""
+        },
+        "design-skills": {
+          "owner": "resend",
+          "repo": "design-skills",
+          "rev": "206dad9736585f6e3d4017276c217898fba2d07c",
+          "sha256": ""
+        },
+        "resend-cli": {
+          "owner": "resend",
+          "repo": "resend-cli",
+          "rev": "9ec0109c16ac8eabf10157afb38c4ec848e2ffdb",
+          "sha256": ""
+        },
+        "email-skills": {
+          "owner": "resend",
+          "repo": "email-skills",
+          "rev": "f4d7fbf9e747685057486a0cd5a17d74ace2eefe",
+          "sha256": ""
+        }
+      },
+      "rivet-dev": {
+        "skills": {
+          "owner": "rivet-dev",
+          "repo": "skills",
+          "rev": "b4c226766d69d738c338f13fc66a88c76c0b99a1",
+          "sha256": ""
+        },
+        "rivet": {
+          "owner": "rivet-dev",
+          "repo": "rivet",
+          "rev": "7a19ce19b4ed5255f656294d796b19035f26232f",
+          "sha256": ""
+        },
+        "sandbox-agent": {
+          "owner": "rivet-dev",
+          "repo": "sandbox-agent",
+          "rev": "ab3ff01b0ec41621342bef1d249de7b398d806c2",
+          "sha256": ""
+        }
+      },
+      "runwayml": {
+        "skills": {
+          "owner": "runwayml",
+          "repo": "skills",
+          "rev": "cc609882edf0b65c94deccd42c841ed934d2d8d0",
+          "sha256": ""
+        }
+      },
+      "sanity-io": {
+        "agent-toolkit": {
+          "owner": "sanity-io",
+          "repo": "agent-toolkit",
+          "rev": "cb0512e6d1eb4fae31a1f9e2721c1419ed7a949c",
+          "sha256": ""
+        },
+        "agent-context": {
+          "owner": "sanity-io",
+          "repo": "agent-context",
+          "rev": "0fd2c0c2128a7eb2b632079265f2addbe8c27cd0",
+          "sha256": ""
+        },
+        "next-sanity": {
+          "owner": "sanity-io",
+          "repo": "next-sanity",
+          "rev": "370bbfb24ba82f50029f94d177c36a60c6a81969",
+          "sha256": ""
+        },
+        "plugins": {
+          "owner": "sanity-io",
+          "repo": "plugins",
+          "rev": "fc1ca28800e61fb8a3b187864fdb100960456d7f",
+          "sha256": ""
+        }
+      },
+      "semgrep": {
+        "skills": {
+          "owner": "semgrep",
+          "repo": "skills",
+          "rev": "df4b53393c9012b90f242ed014bd0f438f361871",
+          "sha256": ""
+        },
+        "cursor-plugin": {
+          "owner": "semgrep",
+          "repo": "cursor-plugin",
+          "rev": "a6931d7f59d1f5aa8324f341c0fa3ca3026df318",
+          "sha256": ""
+        }
+      },
+      "streamlit": {
+        "agent-skills": {
+          "owner": "streamlit",
+          "repo": "agent-skills",
+          "rev": "42fb68fde4472fc0575ae732d4cd44456cf3d793",
+          "sha256": ""
+        },
+        "streamlit": {
+          "owner": "streamlit",
+          "repo": "streamlit",
+          "rev": "43f6ee2cb14bd76a25bfa9fc7dce80ab86f9076f",
+          "sha256": ""
+        }
+      },
+      "stripe": {
+        "ai": {
+          "owner": "stripe",
+          "repo": "ai",
+          "rev": "6856c6cd4dd11152e4d8d97d42abc21558dcacc8",
+          "sha256": ""
+        },
+        "agent-toolkit": {
+          "owner": "stripe",
+          "repo": "agent-toolkit",
+          "rev": "6856c6cd4dd11152e4d8d97d42abc21558dcacc8",
+          "sha256": ""
+        },
+        "purl": {
+          "owner": "stripe",
+          "repo": "purl",
+          "rev": "f15fe7ef9c58a50d9f230b1de637281a64f48cf3",
+          "sha256": ""
+        }
+      },
+      "supabase": {
+        "agent-skills": {
+          "owner": "supabase",
+          "repo": "agent-skills",
+          "rev": "661203203890e2ea0c97846b710040ef4f697a8e",
+          "sha256": ""
+        },
+        "supabase": {
+          "owner": "supabase",
+          "repo": "supabase",
+          "rev": "f0f3784633342072111117cfa4c7d3a32357bcbf",
+          "sha256": ""
+        }
+      },
+      "sveltejs": {
+        "ai-tools": {
+          "owner": "sveltejs",
+          "repo": "ai-tools",
+          "rev": "93c82ac0420ed3601e888b21658c9b6a52b18e7d",
+          "sha256": ""
+        }
+      },
+      "tavily-ai": {
+        "skills": {
+          "owner": "tavily-ai",
+          "repo": "skills",
+          "rev": "41e6b3076ec3939274fe068904955491a7b3e3af",
+          "sha256": ""
+        },
+        "tavily-plugins": {
+          "owner": "tavily-ai",
+          "repo": "tavily-plugins",
+          "rev": "",
+          "sha256": ""
+        }
+      },
+      "temporalio": {
+        "skill-temporal-developer": {
+          "owner": "temporalio",
+          "repo": "skill-temporal-developer",
+          "rev": "26b4362aef21a7269075f67dda09d637edc49b80",
+          "sha256": ""
+        },
+        "skill-temporal-cloud": {
+          "owner": "temporalio",
+          "repo": "skill-temporal-cloud",
+          "rev": "2d867d1f96ae388ed27f1c48aec817f210b6cd3d",
+          "sha256": ""
+        },
+        "skills-temporal-cloud": {
+          "owner": "temporalio",
+          "repo": "skills-temporal-cloud",
+          "rev": "2d867d1f96ae388ed27f1c48aec817f210b6cd3d",
+          "sha256": ""
+        }
+      },
+      "tinybirdco": {
+        "tinybird-agent-skills": {
+          "owner": "tinybirdco",
+          "repo": "tinybird-agent-skills",
+          "rev": "a33c7fbc1a4684f2732267c12a106ee8ad853d53",
+          "sha256": ""
+        }
+      },
+      "tldraw": {
+        "tldraw": {
+          "owner": "tldraw",
+          "repo": "tldraw",
+          "rev": "2632b5f34f50a5e1e06e0b7c34f2b9af0b6c1b8f",
+          "sha256": ""
+        }
+      },
+      "triggerdotdev": {
+        "skills": {
+          "owner": "triggerdotdev",
+          "repo": "skills",
+          "rev": "81d86fe736d669264f5052aca7e173d3cccbf96d",
+          "sha256": ""
+        },
+        "trigger.dev": {
+          "owner": "triggerdotdev",
+          "repo": "trigger.dev",
+          "rev": "57b8d37605336c804553ae6dba7773ef49f293c4",
+          "sha256": ""
+        }
+      },
+      "upstash": {
+        "context7": {
+          "owner": "upstash",
+          "repo": "context7",
+          "rev": "0837b1a0cd003088b6bdb6a73c888bf17f8abd29",
+          "sha256": ""
+        },
+        "redis-js": {
+          "owner": "upstash",
+          "repo": "redis-js",
+          "rev": "79ff0d5e536512c2e737b1313c7ca5a56f9a0e32",
+          "sha256": ""
+        },
+        "qstash-js": {
+          "owner": "upstash",
+          "repo": "qstash-js",
+          "rev": "fa423ae0a64a657e2b9496a9756a342e7265936a",
+          "sha256": ""
+        },
+        "skills": {
+          "owner": "upstash",
+          "repo": "skills",
+          "rev": "a4279fc6f5818d12e1efd22557b928767196d299",
+          "sha256": ""
+        },
+        "context7-mcp": {
+          "owner": "upstash",
+          "repo": "context7-mcp",
+          "rev": "0837b1a0cd003088b6bdb6a73c888bf17f8abd29",
+          "sha256": ""
+        },
+        "ratelimit-js": {
+          "owner": "upstash",
+          "repo": "ratelimit-js",
+          "rev": "5b5448a5f0bae809cd624a7c639771a8b2e227cb",
+          "sha256": ""
+        },
+        "workflow-js": {
+          "owner": "upstash",
+          "repo": "workflow-js",
+          "rev": "711837a4d4803c6a1dd856261d4c62d3df96160a",
+          "sha256": ""
+        },
+        "vector-js": {
+          "owner": "upstash",
+          "repo": "vector-js",
+          "rev": "ad3ad721a1d5035c5a891830174cbba8bcd9d10d",
+          "sha256": ""
+        },
+        "search-js": {
+          "owner": "upstash",
+          "repo": "search-js",
+          "rev": "ee63b7f9cf598870d4f0b71d031e3520812d8b9d",
+          "sha256": ""
+        },
+        "upstash-redis": {
+          "owner": "upstash",
+          "repo": "upstash-redis",
+          "rev": "79ff0d5e536512c2e737b1313c7ca5a56f9a0e32",
+          "sha256": ""
+        }
+      },
+      "vercel": {
+        "ai": {
+          "owner": "vercel",
+          "repo": "ai",
+          "rev": "9c909093cc1694834daa1c42391426729c015070",
+          "sha256": ""
+        },
+        "turborepo": {
+          "owner": "vercel",
+          "repo": "turborepo",
+          "rev": "b7d89a4605146baab1311ede0c660adafdef5d12",
+          "sha256": ""
+        },
+        "ai-elements": {
+          "owner": "vercel",
+          "repo": "ai-elements",
+          "rev": "e0b9cf594774b3faa2f143446961f708441ee840",
+          "sha256": ""
+        },
+        "next.js": {
+          "owner": "vercel",
+          "repo": "next.js",
+          "rev": "81d5e070f4a84b34bb0efe2524c200584fed3215",
+          "sha256": ""
+        },
+        "vercel-plugin": {
+          "owner": "vercel",
+          "repo": "vercel-plugin",
+          "rev": "eb3b6f19e9ca59b23c88d7cc8dfe609388be0fc7",
+          "sha256": ""
+        },
+        "components.build": {
+          "owner": "vercel",
+          "repo": "components.build",
+          "rev": "0ac5adfa8e9d944d1256341d7f288d5561a7d12d",
+          "sha256": ""
+        },
+        "vercel": {
+          "owner": "vercel",
+          "repo": "vercel",
+          "rev": "d1ec3e1fc0cadeccbc90e5459daee17af705b4a6",
+          "sha256": ""
+        },
+        "workflow": {
+          "owner": "vercel",
+          "repo": "workflow",
+          "rev": "29fe9ded57d77ec3277d54fe68ac283fd47f9ad6",
+          "sha256": ""
+        },
+        "chat": {
+          "owner": "vercel",
+          "repo": "chat",
+          "rev": "7181a77b268f9e5219f94b28872919948ac46a00",
+          "sha256": ""
+        },
+        "streamdown": {
+          "owner": "vercel",
+          "repo": "streamdown",
+          "rev": "5f6475139a87dee8af08fcf7b01475292bc064d2",
+          "sha256": ""
+        },
+        "nextjs-skills": {
+          "owner": "vercel",
+          "repo": "nextjs-skills",
+          "rev": "038954e07bfc313e97fa5f6ff7caf87226e4a782",
+          "sha256": ""
+        },
+        "flags": {
+          "owner": "vercel",
+          "repo": "flags",
+          "rev": "1ac83900c8162c97b610979eae4c5f132404e310",
+          "sha256": ""
+        },
+        "vercel-deploy-claude-code-plugin": {
+          "owner": "vercel",
+          "repo": "vercel-deploy-claude-code-plugin",
+          "rev": "ae067751b4f42c97d13054211657275029ca8b6d",
+          "sha256": ""
+        },
+        "examples": {
+          "owner": "vercel",
+          "repo": "examples",
+          "rev": "86160a9d3b3a8d06fd909af0b13a470b4fac6409",
+          "sha256": ""
+        },
+        "next-forge": {
+          "owner": "vercel",
+          "repo": "next-forge",
+          "rev": "9aad7123ef8accc79d6ece399f249c46bdb6b138",
+          "sha256": ""
+        },
+        "microfrontends": {
+          "owner": "vercel",
+          "repo": "microfrontends",
+          "rev": "9440654f52c650db7c47e1f540427406c0390146",
+          "sha256": ""
+        },
+        "turbo": {
+          "owner": "vercel",
+          "repo": "turbo",
+          "rev": "b7d89a4605146baab1311ede0c660adafdef5d12",
+          "sha256": ""
+        },
+        "sandbox": {
+          "owner": "vercel",
+          "repo": "sandbox",
+          "rev": "0786e185f0e358a05978f4f36930bbe217a23a5e",
+          "sha256": ""
+        }
+      },
+      "vercel-labs": {
+        "skills": {
+          "owner": "vercel-labs",
+          "repo": "skills",
+          "rev": "9fd386dbffd0b000ceaeb5e121e065900c01424f",
+          "sha256": ""
+        },
+        "agent-skills": {
+          "owner": "vercel-labs",
+          "repo": "agent-skills",
+          "rev": "73140fc5b3a214ad3222bcf557b397b3c02d11c1",
+          "sha256": ""
+        },
+        "agent-browser": {
+          "owner": "vercel-labs",
+          "repo": "agent-browser",
+          "rev": "7e48a35d550bdd5b792a138e461fab9e608dcae9",
+          "sha256": ""
+        },
+        "next-skills": {
+          "owner": "vercel-labs",
+          "repo": "next-skills",
+          "rev": "038954e07bfc313e97fa5f6ff7caf87226e4a782",
+          "sha256": ""
+        },
+        "json-render": {
+          "owner": "vercel-labs",
+          "repo": "json-render",
+          "rev": "f67a52c55a94d2d704883ae2eb5127cb5470ee1f",
+          "sha256": ""
+        },
+        "vercel-plugin": {
+          "owner": "vercel-labs",
+          "repo": "vercel-plugin",
+          "rev": "eb3b6f19e9ca59b23c88d7cc8dfe609388be0fc7",
+          "sha256": ""
+        },
+        "next-browser": {
+          "owner": "vercel-labs",
+          "repo": "next-browser",
+          "rev": "eb30fa76a2b67a942cc35e008dd5f5e0fd53d6f7",
+          "sha256": ""
+        },
+        "portless": {
+          "owner": "vercel-labs",
+          "repo": "portless",
+          "rev": "30b845139558a2b5c26037dc4c597b0953660947",
+          "sha256": ""
+        },
+        "ai": {
+          "owner": "vercel-labs",
+          "repo": "ai",
+          "rev": "9c909093cc1694834daa1c42391426729c015070",
+          "sha256": ""
+        },
+        "vercel-skills": {
+          "owner": "vercel-labs",
+          "repo": "vercel-skills",
+          "rev": "",
+          "sha256": ""
+        },
+        "before-and-after": {
+          "owner": "vercel-labs",
+          "repo": "before-and-after",
+          "rev": "178594233450657b198b965635b3bba443bf9129",
+          "sha256": ""
+        },
+        "claude-skills": {
+          "owner": "vercel-labs",
+          "repo": "claude-skills",
+          "rev": "73140fc5b3a214ad3222bcf557b397b3c02d11c1",
+          "sha256": ""
+        },
+        "agent-eval": {
+          "owner": "vercel-labs",
+          "repo": "agent-eval",
+          "rev": "d4c0a01a088cc242ba69eb8f7f1c75d1a7207151",
+          "sha256": ""
+        },
+        "dev3000": {
+          "owner": "vercel-labs",
+          "repo": "dev3000",
+          "rev": "ef3326e1c6d2362f15c902f47f3ac11ccaa0df08",
+          "sha256": ""
+        },
+        "skill-remotion-geist": {
+          "owner": "vercel-labs",
+          "repo": "skill-remotion-geist",
+          "rev": "4f7201370f10b31a4517c82619400c1acb0ed4e1",
+          "sha256": ""
+        },
+        "agentic-commerce-skills": {
+          "owner": "vercel-labs",
+          "repo": "agentic-commerce-skills",
+          "rev": "735241a60ffb77cea3c2c18a1ada0667e6565128",
+          "sha256": ""
+        },
+        "migration-skills": {
+          "owner": "vercel-labs",
+          "repo": "migration-skills",
+          "rev": "a9bdb175792cbb7cf816732790e8020d3c8e2370",
+          "sha256": ""
+        },
+        "slack-agent-skill": {
+          "owner": "vercel-labs",
+          "repo": "slack-agent-skill",
+          "rev": "04690f1c815c7370723b368b68b22f7777302750",
+          "sha256": ""
+        },
+        "autoship": {
+          "owner": "vercel-labs",
+          "repo": "autoship",
+          "rev": "6a2735fece141855e979cb29503303f54bae28c5",
+          "sha256": ""
+        },
+        "openreview": {
+          "owner": "vercel-labs",
+          "repo": "openreview",
+          "rev": "672deb21e70e471e0536d5ad7a67c14b8359e97e",
+          "sha256": ""
+        },
+        "emulate": {
+          "owner": "vercel-labs",
+          "repo": "emulate",
+          "rev": "fa167eeca55880877a8e529c7f272af0354f15c1",
+          "sha256": ""
+        },
+        "webreel": {
+          "owner": "vercel-labs",
+          "repo": "webreel",
+          "rev": "5cb748d3a51c655bf2d4a4cf42501b6366a3f28c",
+          "sha256": ""
+        },
+        "sitecore-skills": {
+          "owner": "vercel-labs",
+          "repo": "sitecore-skills",
+          "rev": "6190d42d736ca8b576a02578786152b9f9e4cfad",
+          "sha256": ""
+        },
+        "py-ai": {
+          "owner": "vercel-labs",
+          "repo": "py-ai",
+          "rev": "99f840f9ec198c08fd6148185db92373934ca93f",
+          "sha256": ""
+        },
+        "bash-tool": {
+          "owner": "vercel-labs",
+          "repo": "bash-tool",
+          "rev": "134d5fb01d13be12d87cdb21581260d57acf01a8",
+          "sha256": ""
+        },
+        "skill-geist-learning-labs": {
+          "owner": "vercel-labs",
+          "repo": "skill-geist-learning-labs",
+          "rev": "5fb4ff07b6dd79bb19076beb67bdda6edffc6ffc",
+          "sha256": ""
+        },
+        "next-docs-agentic-rag": {
+          "owner": "vercel-labs",
+          "repo": "next-docs-agentic-rag",
+          "rev": "1499363ba917dddcdc474b61600ce4111727ad3b",
+          "sha256": ""
+        },
+        "vercel-deploy-codex-skill": {
+          "owner": "vercel-labs",
+          "repo": "vercel-deploy-codex-skill",
+          "rev": "baeeb9d6d0acca47400dd4939aa6499100bbd0f0",
+          "sha256": ""
+        },
+        "cursor-plugin": {
+          "owner": "vercel-labs",
+          "repo": "cursor-plugin",
+          "rev": "95857183947fcc2a478f817c1e5d24ec054b21a9",
+          "sha256": ""
+        },
+        "ralph-gpu": {
+          "owner": "vercel-labs",
+          "repo": "ralph-gpu",
+          "rev": "4f47ced574fc9cbef34a176642b356e12bc0a6f5",
+          "sha256": ""
+        },
+        "academy-skills": {
+          "owner": "vercel-labs",
+          "repo": "academy-skills",
+          "rev": "059204ccce05d68ae0d0d3c5213bc38c8d96497e",
+          "sha256": ""
+        }
+      },
+      "webflow": {
+        "webflow-skills": {
+          "owner": "webflow",
+          "repo": "webflow-skills",
+          "rev": "54ac5dfb944b8a6d1a69248ee93d9d26936462f5",
+          "sha256": ""
+        }
+      },
+      "whopio": {},
+      "wix": {
+        "skills": {
+          "owner": "wix",
+          "repo": "skills",
+          "rev": "13899874e525598f97990183a056acba2d90161f",
+          "sha256": ""
+        },
+        "react-native-navigation": {
+          "owner": "wix",
+          "repo": "react-native-navigation",
+          "rev": "b782b6a45b60ce5d632eb982b559792983f480d7",
+          "sha256": ""
+        }
+      },
+      "wordpress": {
+        "agent-skills": {
+          "owner": "wordpress",
+          "repo": "agent-skills",
+          "rev": "c5c0697b120ec00e8fcf6a265f161c61dbc2581c",
+          "sha256": ""
+        }
+      }
+    }
+  }
+}

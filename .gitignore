@@ -1,0 +1,22 @@
+# Nix
+.dirlocals
+result
+result-*
+.envrc
+.env
+/.envrc
+.cache/
+
+# Development
+node_modules/
+.venv/
+venv/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+*.tmp
+/temp
+.tmp.*
