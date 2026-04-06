@@ -20,7 +20,7 @@
         };
       };
 
-      skills = with pkgs.agent-skills.skills-sh; [
+      skills = with pkgs.agent-skills; [
         (official.encoredev.skills {
           scopes = ["global" "claude"];
           plugins = [

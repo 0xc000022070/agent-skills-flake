@@ -28,20 +28,21 @@
       if builtins.hasAttr scope toolDirs
       then [toolDirs.${scope}]
       else if builtins.hasAttr scope cfg.workspaces
-      then
-        let
-          workspace = cfg.workspaces.${scope};
-          workspaceScopes = if workspace.scopes == [] then ["global"] else workspace.scopes;
-        in
-          map (
-            s:
-              if builtins.hasAttr s toolDirs
-              then "${workspace.path}/${toolDirs.${s}}"
-              else throw "Unknown tool scope '${s}' in workspace '${scope}'"
-          )
-          workspaceScopes
-      else
-        throw "Unknown scope '${scope}': not a built-in tool (${lib.concatStringsSep ", " allTools}) or defined workspace";
+      then let
+        workspace = cfg.workspaces.${scope};
+        workspaceScopes =
+          if workspace.scopes == []
+          then ["global"]
+          else workspace.scopes;
+      in
+        map (
+          s:
+            if builtins.hasAttr s toolDirs
+            then "${workspace.path}/${toolDirs.${s}}"
+            else throw "Unknown tool scope '${s}' in workspace '${scope}'"
+        )
+        workspaceScopes
+      else throw "Unknown scope '${scope}': not a built-in tool (${lib.concatStringsSep ", " allTools}) or defined workspace";
   in
     lib.flatten (map expandScope normalized);
 
@@ -140,7 +141,7 @@ in {
         `<scope-dir>/<prefix><plugin-name>/` → `<store-path>/<plugin-name>/`
       '';
       example = lib.literalExpression ''
-        with pkgs.agent-skills.skills-sh; [
+        with pkgs.agent-skills; [
           (official.encoredev.skills {
             plugins = [
               "encore-api"

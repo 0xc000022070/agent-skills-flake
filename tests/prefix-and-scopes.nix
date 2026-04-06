@@ -8,7 +8,7 @@
 
     programs.agents = {
       enable = true;
-      skills = with pkgs.agent-skills.skills-sh; [
+      skills = with pkgs.agent-skills; [
         (official.anthropics.skills {
           prefix = "anthropics-";
           scopes = ["global"];

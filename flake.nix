@@ -39,9 +39,7 @@
     homeModules.default = self.homeManagerModules.agents;
 
     overlays.default = final: _prev: {
-      agent-skills = {
-        skills-sh = mkSkillPackages final;
-      };
+      agent-skills = mkSkillPackages final;
     };
 
     devShells = forAllSystems (pkgs: {
