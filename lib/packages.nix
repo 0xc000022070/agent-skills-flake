@@ -26,7 +26,20 @@
 
       installPhase = ''
         mkdir -p $out
-        cp -rL plugins/* $out/
+
+        cp {AGENTS.md,CLAUDE.md} "$out/" || true
+
+        if [ -d "plugins" ]; then
+          find plugins -mindepth 1 -maxdepth 1 -type d | while read plugin_dir; do
+            if [ -d "$plugin_dir/skills" ]; then
+              # Copy each skill directory with all contents, dereferencing symlinks
+              find "$plugin_dir/skills" -mindepth 1 -maxdepth 1 -type d | while read skill_dir; do
+                skill_name=$(basename "$skill_dir")
+                cp -rL "$skill_dir" "$out/$skill_name"
+              done
+            fi
+          done
+        fi
       '';
 
       meta = with lib; {
