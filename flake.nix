@@ -38,12 +38,18 @@
 
     devShells = forAllSystems (pkgs: {
       default = pkgs.mkShell {
-        buildInputs = with pkgs; [
-          bun
-          htmlq
-          curl
-          git
-        ];
+        buildInputs = with pkgs;
+          [
+            bun
+            htmlq
+            curl
+            git
+          ]
+          ++ (with self.packages.${pkgs.stdenv.hostPlatform.system}.skills-sh; [
+            official.encoredev.skills
+            official.anthropics.claude-code
+            official.getsentry.cli
+          ]);
       };
     });
   };
