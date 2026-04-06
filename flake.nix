@@ -14,6 +14,7 @@
   in {
     homeManagerModules.agents = import ./modules/home-manager/agents.nix;
     homeManagerModules.default = self.homeManagerModules.agents;
+    homeModules.default = self.homeManagerModules.agents;
 
     packages = forAllSystems (
       pkgs: let
