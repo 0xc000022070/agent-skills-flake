@@ -1,7 +1,6 @@
 #!/usr/bin/env -S bun run
-// Sync official providers: discover + fetch rev+sha256 in one call via nix-prefetch-github
 
-import { writeFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { spawn } from "bun";
 import pLimit from "p-limit";
@@ -27,6 +26,12 @@ const PROJECT_ROOT = path.dirname(
 );
 const SOURCES_FILE = path.join(PROJECT_ROOT, "sources.json");
 const SKILLS_SH_BASE = "https://skills.sh";
+
+let existingSourcesJson: SourcesJson | null = null;
+try {
+	const content = readFileSync(SOURCES_FILE, "utf-8");
+	existingSourcesJson = JSON.parse(content);
+} catch {} // not fouund, i don't care
 
 const log = {
 	info: (msg: string) => console.log(`✓ ${msg}`),
@@ -84,31 +89,96 @@ async function fetchOrgRepos(org: string): Promise<string[]> {
 	}
 }
 
-// nix-prefetch-github returns: rev\nsha256
-async function fetchHashWithRev(
-	owner: string,
-	repo: string,
-): Promise<{ rev: string; sha256: string }> {
+async function fetchRev(owner: string, repo: string): Promise<string> {
 	try {
-		const proc = spawn(["nix-prefetch-github", owner, repo], {
-			stdout: "pipe",
-			stderr: "pipe",
-		});
+		const proc = spawn(
+			[
+				"bash",
+				"-c",
+				`git ls-remote https://github.com/${owner}/${repo}.git refs/heads/main | cut -f1`,
+			],
+			{ stdout: "pipe", stderr: "pipe" },
+		);
 
 		const output = await new Response(proc.stdout).text();
-		const lines = output.trim().split("\n");
-
-		const rev = lines[0]?.trim() || "";
-		const sha256 = lines[1]?.trim() || "";
-
-		return { rev, sha256 };
+		return output.trim();
 	} catch {
-		return { rev: "", sha256: "" };
+		return "";
 	}
 }
 
+async function fetchSha256(
+	owner: string,
+	repo: string,
+	rev: string,
+): Promise<string> {
+	const timeoutPromise = new Promise<"">((resolve) => {
+		setTimeout(() => {
+			resolve("");
+		}, 5000);
+	});
+
+	try {
+		const proc = spawn(
+			[
+				"bash",
+				"-c",
+				`nix-prefetch-url --unpack "https://github.com/${owner}/${repo}/archive/${rev}.tar.gz" 2>/dev/null`,
+			],
+			{ stdout: "pipe", stderr: "pipe" },
+		);
+
+		const resultPromise = (async () => {
+			const output = await new Response(proc.stdout).text();
+			return output.trim();
+		})();
+
+		const result = await Promise.race([resultPromise, timeoutPromise]);
+		return result;
+	} catch {
+		return "";
+	}
+}
+
+async function fetchHashWithRev(
+	owner: string,
+	repo: string,
+): Promise<{
+	rev: string;
+	sha256: string;
+	skipped?: boolean;
+	skippedReason?: string;
+}> {
+	const rev = await fetchRev(owner, repo);
+
+	if (!rev) {
+		log.warn(`${owner}/${repo}: failed to fetch rev`);
+		return { rev: "", sha256: "", skipped: false };
+	}
+
+	const existingRev =
+		existingSourcesJson?.providers?.official?.[owner]?.[repo]?.rev;
+	if (existingRev === rev) {
+		return {
+			rev,
+			sha256: existingSourcesJson.providers.official[owner][repo].sha256,
+			skipped: true,
+			skippedReason: "rev-unchanged",
+		};
+	}
+
+	const sha256 = await fetchSha256(owner, repo, rev);
+
+	if (!sha256) {
+		log.warn(`${owner}/${repo}: timeout on sha256 fetch`);
+		return { rev, sha256: "", skipped: true, skippedReason: "timeout" };
+	}
+
+	return { rev, sha256, skipped: false };
+}
+
 async function main() {
-	console.log("\n" + "═".repeat(40));
+	console.log(`\n${"═".repeat(40)}`);
 	console.log("Sync Official Providers");
 	console.log("═".repeat(40));
 
@@ -137,15 +207,20 @@ async function main() {
 
 	log.info(`Total: ${totalRepos} repositories`);
 
-	// Phase 3: Fetch hashes
+	// Phase 3: Fetch revisions and hashes
 	log.task("Phase 3: Fetching revisions and hashes");
 
-	const limit = pLimit(3); // 3 concurrent nix-prefetch-github calls
+	const limit = pLimit(5);
 	let processed = 0;
+	let skippedRevUnchanged = 0;
+	let skippedTimeout = 0;
 
 	const hashResults: Record<
 		string,
-		Record<string, { rev: string; sha256: string }>
+		Record<
+			string,
+			{ rev: string; sha256: string; skipped?: boolean; skippedReason?: string }
+		>
 	> = {};
 
 	for (const org of orgs) {
@@ -155,6 +230,13 @@ async function main() {
 			limit(async () => {
 				const hash = await fetchHashWithRev(org, repo);
 				hashResults[org][repo] = hash;
+				if (hash.skipped) {
+					if (hash.skippedReason === "rev-unchanged") {
+						skippedRevUnchanged++;
+					} else if (hash.skippedReason === "timeout") {
+						skippedTimeout++;
+					}
+				}
 				processed++;
 				log.progress(processed, totalRepos, `${org}/${repo}`);
 			}),
@@ -164,6 +246,12 @@ async function main() {
 	}
 
 	console.log(); // newline after progress
+	if (skippedRevUnchanged > 0) {
+		log.info(`Skipped ${skippedRevUnchanged} repos (rev unchanged)`);
+	}
+	if (skippedTimeout > 0) {
+		log.warn(`Skipped ${skippedTimeout} repos (timeout on sha256 fetch)`);
+	}
 
 	// Phase 4: Build sources.json
 	log.task("Phase 4: Building sources.json");
@@ -185,6 +273,15 @@ async function main() {
 
 		for (const repo of discovered[org]) {
 			const hash = hashResults[org][repo] || { rev: "", sha256: "" };
+
+			if (hash.skippedReason === "timeout") {
+				const existing =
+					existingSourcesJson?.providers?.official?.[org]?.[repo];
+				if (existing) {
+					sources.providers.official[org][repo] = existing;
+				}
+				continue;
+			}
 
 			if (hash.rev) withRev++;
 			if (hash.sha256) withHash++;
