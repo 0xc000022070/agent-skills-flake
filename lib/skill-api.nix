@@ -14,16 +14,20 @@
   in
     if parts == []
     then throw "mkSkill could not derive a root skill name from src"
-    else builtins.elemAt parts ((builtins.length parts) - 1);
+    else lib.last parts;
+
+  isTemplate = relParts: lib.any (part: builtins.match ".*[Tt]emplate.*" part != null) relParts;
 
   discoverSkills = src: let
     normalizedSrc = normalizeSrc src;
 
+    # Recursively scan directory tree for SKILL.md files, building (skillId -> relPath) map.
+    # Skips directories matching template patterns and respects symlinks.
     scan = path: relParts: let
       entries = builtins.readDir path;
       relPath = lib.concatStringsSep "/" relParts;
       hasSkill = entries ? "SKILL.md";
-      isTemplatePath = lib.any (part: builtins.match ".*[Tt]emplate.*" part != null) relParts;
+      isTemplatePath = isTemplate relParts;
 
       current =
         if hasSkill && !isTemplatePath
@@ -43,11 +47,7 @@
         ]
         else [];
 
-      dirs =
-        lib.filter (
-          name: let kind = entries.${name}; in kind == "directory" || kind == "symlink"
-        )
-        (builtins.attrNames entries);
+      dirs = builtins.attrNames (lib.filterAttrs (name: kind: kind == "directory" || kind == "symlink") entries);
 
       deeper = lib.flatten (map (name: scan (path + "/${name}") (relParts ++ [name])) dirs);
     in
@@ -56,7 +56,7 @@
     discovered = lib.listToAttrs (scan normalizedSrc []);
   in
     if discovered == {}
-    then throw "mkSkill found no directories containing SKILL.md under ${toString normalizedSrc}"
+    then throw "mkSkill found no SKILL.md files under ${toString normalizedSrc}. Ensure skill directories contain SKILL.md and are not in 'template' directories."
     else discovered;
 
   assertKnownPlugins = availablePlugins: requestedPlugins: let
