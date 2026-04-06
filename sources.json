@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-04-06T03:11:00.992Z",
+  "updatedAt": "2026-04-06T13:08:56.997Z",
   "namespace": "skills-sh",
   "providers": {
     "official": {
@@ -52,6 +52,24 @@
           "repo": "life-sciences",
           "rev": "f6f10ffc1f4fbc96cdccf46e4d1a4c0914a316a9",
           "sha256": "1gc9qy302jlirrsn6zqdfz6a72aw3dkayymziyl7vsi7wwpbzj99"
+        },
+        "claude-cookbooks": {
+          "owner": "anthropics",
+          "repo": "claude-cookbooks",
+          "rev": "ca0dd33d4b55cbab037a4b8ad1a06a362e58b29f",
+          "sha256": "1i1aq19pnwvmrdg9pbfmpmj6ckjlmc5rcxi3s1y77x88jzlzgk60"
+        },
+        "anthropic-cookbook": {
+          "owner": "anthropics",
+          "repo": "anthropic-cookbook",
+          "rev": "ca0dd33d4b55cbab037a4b8ad1a06a362e58b29f",
+          "sha256": "1i1aq19pnwvmrdg9pbfmpmj6ckjlmc5rcxi3s1y77x88jzlzgk60"
+        },
+        "cookbook": {
+          "owner": "anthropics",
+          "repo": "cookbook",
+          "rev": "ca0dd33d4b55cbab037a4b8ad1a06a362e58b29f",
+          "sha256": "1i1aq19pnwvmrdg9pbfmpmj6ckjlmc5rcxi3s1y77x88jzlzgk60"
         }
       },
       "apify": {
@@ -134,6 +152,12 @@
           "repo": "android",
           "rev": "61955d7cbe1546a4c467284b4a5491d4f0e47afa",
           "sha256": "1i831zpv5131wc08v8jna7y7mc2vjyjyjvlk1f335h188kg9l0id"
+        },
+        "clients": {
+          "owner": "bitwarden",
+          "repo": "clients",
+          "rev": "90cc83fbc2fb21f5d539927dfc9d466b3f4b249c",
+          "sha256": "1wnjh2ggpa92qlirarncpwxay5jbmax29qfxdsi24219ndhxl7bv"
         }
       },
       "box": {},
@@ -362,8 +386,8 @@
         "omni-agent-skills": {
           "owner": "exploreomni",
           "repo": "omni-agent-skills",
-          "rev": "d19ddf5811300f0b20d2ae7b4f80c39bcf8e13a5",
-          "sha256": "15hxyv3qrlybm3v6a2yx35xp5m4qzp57g04f3vwvik4kwwkpy5wc"
+          "rev": "a4dc6f1f16854fe567bd9c262e125df3d943414e",
+          "sha256": "1vlz0znvbgrd99m3nyycqpsvr88qmirb2pkji5lcxx7f1jrlyq96"
         },
         "omni-cursor-plugin": {
           "owner": "exploreomni",
@@ -490,6 +514,12 @@
           "repo": "genui",
           "rev": "bba8a708d4e68af44bc62a633593687a669cfe61",
           "sha256": "1bhmqvbkrgyd2vqpyb2gvd6zlyavjjflmb83l7ck23qx1bcb50fz"
+        },
+        "website": {
+          "owner": "flutter",
+          "repo": "website",
+          "rev": "2836ccd2883baafff37ed221d37c1748f8a22100",
+          "sha256": "1h39r82d0cqra6dqnf5mx2j793ygykazb4dnyrg9czpyikcl9xb5"
         }
       },
       "getsentry": {
@@ -544,8 +574,8 @@
         "cli": {
           "owner": "getsentry",
           "repo": "cli",
-          "rev": "d5806b4a6767980ed4ff5f4821740974b88f51b5",
-          "sha256": "162l2m5k3nwynik90fkh5ar8hpdk0n3mhwbn6xl2hypklfah0pk6"
+          "rev": "828ebfc79c450b9d70000dc554270e5cd6c040bd",
+          "sha256": "0ssqrfj50nii2yx9rahlcpi3ibadi181b1awcf7cx4kyxqnq9smn"
         },
         "sentry-python": {
           "owner": "getsentry",
@@ -578,6 +608,12 @@
           "repo": "awesome-copilot",
           "rev": "0c3c5bbbfb2a7d57d36473a83fdbef1becc5053f",
           "sha256": "08mads127wwwsjpgi5igg2sbnk2cvx3jgp9hjbf7k35z33n5273c"
+        },
+        "gh-aw": {
+          "owner": "github",
+          "repo": "gh-aw",
+          "rev": "9f949b2105c428511b5db50d1bd5a6f00ec0a659",
+          "sha256": "1xm6y9wbjp37k448jrypx0ix1gajimnhgdwmfimk5ilblrqardkv"
         },
         "copilot-plugins": {
           "owner": "github",
@@ -662,8 +698,8 @@
         "transformers": {
           "owner": "huggingface",
           "repo": "transformers",
-          "rev": "374d44d54adb1c5f52e68aff97d1675f56d657a8",
-          "sha256": "12kmjn1bjsg31zk5s2mqkmib3chdm3vrxzh1b7c85f7zv8d07jhc"
+          "rev": "d3c7a19176496fc1ea246aa9df4f678f4fceb1cf",
+          "sha256": "1yw9x6m5qrikqb74sjy6qzzyjz44zzsv087alnv1c12fj5sljskw"
         },
         "huggingface_hub": {
           "owner": "huggingface",
@@ -690,8 +726,8 @@
         "deepagents": {
           "owner": "langchain-ai",
           "repo": "deepagents",
-          "rev": "a3e1e9365178ad14d7233ae577bb87d714daff5c",
-          "sha256": "01pqx3pab59bn4kgl24ghbhxfpji9mfpgk8yzdplcq2531v30xrw"
+          "rev": "01d3d864098c4e96527082b2bd1755ac6591b098",
+          "sha256": "14ywyvz3iqmvvxwm2kiqxxpiy38fm9ximw3570xcmhq8z903zg0p"
         },
         "langsmith-skills": {
           "owner": "langchain-ai",
@@ -708,8 +744,8 @@
         "deepagentsjs": {
           "owner": "langchain-ai",
           "repo": "deepagentsjs",
-          "rev": "37a12fa57ed429e37030eb729e6399932d859dfe",
-          "sha256": "0q5m226ww5x17xa7vc4fkl3kn7c984ahyl6h1gs8izc8swy00dd1"
+          "rev": "6830c24981c4a69c8d13d72921ab125a40de9f7c",
+          "sha256": "0lvridk9j1xg2msng8dbxm21ipzb31nii76wmwx01p30cnwn2fym"
         },
         "lca-skills": {
           "owner": "langchain-ai",
@@ -787,9 +823,21 @@
           "repo": "skills",
           "rev": "5d04dc00fe3b2a29d70995ce0f034d4f489d167f",
           "sha256": "1vqrvc908nczqz76anfy0g7yzqdjl3x1b33j3q8li8fzhb89pi10"
+        },
+        "mastra": {
+          "owner": "mastra-ai",
+          "repo": "mastra",
+          "rev": "6d89c75de5c90baccc9bac7b728e834624771c17",
+          "sha256": "0pgm8jbqmm3h69l6b4hw20dllhm5z2na8jx9kpr3dr43gz3zqwp4"
         }
       },
       "mcp-use": {
+        "mcp-use": {
+          "owner": "mcp-use",
+          "repo": "mcp-use",
+          "rev": "a4a84d9a666608b05376d87944c37cfdd2901d8a",
+          "sha256": "1hgq27rspcq9y00nlphdzpm7dhdanzf7nkwy4lyff1d0741dvwbs"
+        },
         "skills": {
           "owner": "mcp-use",
           "repo": "skills",
@@ -830,6 +878,12 @@
           "rev": "a0d5bfd4d9658073029d33f979ac5a027568caec",
           "sha256": "11f90ddy65xdqlrbyqgsk4c2w5s84kg4cgqlr5l87ad2cdahdmin"
         },
+        "vscode": {
+          "owner": "microsoft",
+          "repo": "vscode",
+          "rev": "6c8fcf1806fc53b1a1fb8863973ac55842edeb05",
+          "sha256": "126rp0xcyian2lzm86y4a5qpcb6dyrckh8dr296rk49gx1alvrq4"
+        },
         "skills": {
           "owner": "microsoft",
           "repo": "skills",
@@ -860,6 +914,12 @@
           "rev": "d30103fee6b03e2322dc13d590ef43661692b7c9",
           "sha256": "0d1368p1bh792g39wz56qsv5z022sskz7nb3m5kcmd65xcwhziiy"
         },
+        "powertoys": {
+          "owner": "microsoft",
+          "repo": "powertoys",
+          "rev": "1e1bd07087cdc526edee3d69bc2faae9b0a5f199",
+          "sha256": "1xj12jdv55fkifaigmd2wpbwgqz7i2w1174ig1a11c12ppvdddf2"
+        },
         "skills-for-fabric": {
           "owner": "microsoft",
           "repo": "skills-for-fabric",
@@ -869,8 +929,8 @@
         "vscode-copilot-chat": {
           "owner": "microsoft",
           "repo": "vscode-copilot-chat",
-          "rev": "bab22b97be80dd60102cbbae1d42ef1be15e2583",
-          "sha256": "0k3c6il88jd4yn6knhsajfrn9yjr2cn67paaqkpnm1il6cr0hr7w"
+          "rev": "3f2a72e292fe19ca8927283690b7fb9ef095473a",
+          "sha256": "0qb88vr71329axxn4rb1f8iq2f399dzn85mnl0axlx28738ppgyp"
         },
         "fabric-cli": {
           "owner": "microsoft",
@@ -908,29 +968,29 @@
           "rev": "63598cadd8231c4e625b616e7ae5530917b01d58",
           "sha256": "1q7mhlkr0b9swprqvmmzs8kj3qi79s4q1br7bkzr4j53996515bn"
         },
-        "vscode-cosmosdb": {
-          "owner": "microsoft",
-          "repo": "vscode-cosmosdb",
-          "rev": "f4db41bf3996373b167c81322c55c23e33fedc9f",
-          "sha256": "1zd5n149ar3mhxx0s1wnjxsnc4wnbn4xs3gpxljh4pqz2zkkbgvw"
-        },
         "rushstack": {
           "owner": "microsoft",
           "repo": "rushstack",
           "rev": "981ef149cd9e1280286a459b1f50787a07b0524c",
           "sha256": "1wjn78ldz1v5agfn5mwndbjwbw46psjlrmr5cra1rzc6rq04rzlj"
         },
-        "apm": {
+        "vscode-cosmosdb": {
           "owner": "microsoft",
-          "repo": "apm",
-          "rev": "44eebf1510593ef4548cb3ad7dbe90fc19c9b28d",
-          "sha256": "0czzfiymb7dzalnb5brakaq1cyq3m2i3aj3fv4pydlykv2y1q4n2"
+          "repo": "vscode-cosmosdb",
+          "rev": "f4db41bf3996373b167c81322c55c23e33fedc9f",
+          "sha256": "1zd5n149ar3mhxx0s1wnjxsnc4wnbn4xs3gpxljh4pqz2zkkbgvw"
         },
         "semantic-link-labs": {
           "owner": "microsoft",
           "repo": "semantic-link-labs",
           "rev": "3eb8bb9f1f18d02b0553db989168f68b42dbaa38",
           "sha256": "0pwj2igk5rag8hkqm4j1p43isma91m3bbimh4k8p2djva5pq89fj"
+        },
+        "apm": {
+          "owner": "microsoft",
+          "repo": "apm",
+          "rev": "44eebf1510593ef4548cb3ad7dbe90fc19c9b28d",
+          "sha256": "0czzfiymb7dzalnb5brakaq1cyq3m2i3aj3fv4pydlykv2y1q4n2"
         },
         "agent-governance-toolkit": {
           "owner": "microsoft",
@@ -1001,20 +1061,20 @@
         "openai-agents-python": {
           "owner": "openai",
           "repo": "openai-agents-python",
-          "rev": "7a3f6b70d1bd4e700f3a06547b673295fb52e74d",
-          "sha256": "1w4agb2ygkyilfagy5s6gjcq3j7pwsgyd5aqy93dpd2maqrc8lmm"
+          "rev": "fa508992edc6640f2ccf6addfbdb30c98f109b5d",
+          "sha256": "1xiy42qwh27h5ndxgwsxgxrp6j3pcqfg549sq3z7nv8y9avxbfh7"
         },
         "codex": {
           "owner": "openai",
           "repo": "codex",
-          "rev": "b5edeb98a0f3a7a0f43243f6ae06bc7de6cfacc0",
-          "sha256": "0x2mjs4y7kppwas1vsamihcz24m9qvzlxgsvk1hfpq8qdl20n4mi"
+          "rev": "e65ee385793bf0b82cc958b9fc5081f81110706b",
+          "sha256": "0xn1y3na8gcws955l00xz5ffa9abql752iy7f3mkyjwm66hg8p22"
         },
         "openai-agents-js": {
           "owner": "openai",
           "repo": "openai-agents-js",
-          "rev": "1b26ce66d5e9168ddd7f1cfbe5be83ca92066bbc",
-          "sha256": "03yjis7ji3rwsi00yr6nrm2mynqa41lhj3vz2kzvh0r51xhj13gq"
+          "rev": "69201fd358ff84d90cb5d7847ff4d8b714c9c263",
+          "sha256": "04gzp6nw2snlhrz3aipyhs1m51cnz9s2a6589800q8fxha856maz"
         },
         "codex-plugin-cc": {
           "owner": "openai",
@@ -1122,8 +1182,8 @@
         "redisinsight": {
           "owner": "redis",
           "repo": "redisinsight",
-          "rev": "21bc9759019b2d244954bdb6dad3f9af4ba94e2d",
-          "sha256": "0ffpyfmm2rwg55ifw6827kjd15w68xpk7xcd4cjyjla2rz5ldbbs"
+          "rev": "8f6fadd7da92f346233e24a101887071535f2e07",
+          "sha256": "1416irayfdm93204kf24plr1spc09wrbldl02krrz77fc9w36fyk"
         }
       },
       "remotion-dev": {
@@ -1178,6 +1238,18 @@
           "repo": "skills",
           "rev": "b4c226766d69d738c338f13fc66a88c76c0b99a1",
           "sha256": "0q770q2bnvfk00c9q3466grsd3nrd6xc0jv3vnywlkjklm6p338f"
+        },
+        "rivet": {
+          "owner": "rivet-dev",
+          "repo": "rivet",
+          "rev": "cd19812cd08b72102678f9323f5284a50c4106a7",
+          "sha256": "14ig88ccq76h6n2gkzw05hpj228cs4skf5kxdxmvzmybkfjql6n9"
+        },
+        "sandbox-agent": {
+          "owner": "rivet-dev",
+          "repo": "sandbox-agent",
+          "rev": "ab3ff01b0ec41621342bef1d249de7b398d806c2",
+          "sha256": "1wwrv5m013hhgaapsh3vrphq7hmar3lfybb5nckvj3xc0bynqyi5"
         }
       },
       "runwayml": {
@@ -1384,8 +1456,8 @@
         "turborepo": {
           "owner": "vercel",
           "repo": "turborepo",
-          "rev": "20dfb78b84773b4a31946d91b21b7c22f83e61f0",
-          "sha256": "0arg8bkhiklcfkzr8185s24mbsp95vi4k1wzmi7z582f2zd0vn7c"
+          "rev": "891188e22168e497551dd20731b4db65fa30b247",
+          "sha256": "1i4wjkk3rc0jjvhi3hqril6gil9r6kis2y6zrwgd6izwajx83mik"
         },
         "ai-elements": {
           "owner": "vercel",
@@ -1405,11 +1477,17 @@
           "rev": "0ac5adfa8e9d944d1256341d7f288d5561a7d12d",
           "sha256": "15gn9s1hzbw4gjm8ka9jd84azfgw0djai0ibm5mqqyc48n3ah2gq"
         },
+        "vercel": {
+          "owner": "vercel",
+          "repo": "vercel",
+          "rev": "0f54d508c042517ee85064880f66e5eecde8b116",
+          "sha256": "062cl7wnvxnblycwyfxwxsnvwpp9vk6c1n54l96gvch3sgffm68l"
+        },
         "workflow": {
           "owner": "vercel",
           "repo": "workflow",
-          "rev": "29fe9ded57d77ec3277d54fe68ac283fd47f9ad6",
-          "sha256": "0sr1fkc34c9dq494ahm74p4hdc7nha7m3q05zxcy7p74j6p0rqh4"
+          "rev": "2680a427f0f15182ce559bdab620a1c6d463c3f3",
+          "sha256": "05c3p2dkwvxbwklq0w24hhcd07zflgjqlkbydsibxrhlqbkdi30y"
         },
         "chat": {
           "owner": "vercel",
@@ -1441,6 +1519,12 @@
           "rev": "ae067751b4f42c97d13054211657275029ca8b6d",
           "sha256": "1n3ksir73ykz5rx8x26nm8vfn556ymsbybr53m9b44d4iy53m2xc"
         },
+        "examples": {
+          "owner": "vercel",
+          "repo": "examples",
+          "rev": "91c9155aece886048b5869432611c17be4ceedbe",
+          "sha256": "09xfz2wzzyzhrrzcahm5xhknkp72hvb8z5fdwg4qnzjsrb8yjlr8"
+        },
         "next-forge": {
           "owner": "vercel",
           "repo": "next-forge",
@@ -1456,8 +1540,8 @@
         "turbo": {
           "owner": "vercel",
           "repo": "turbo",
-          "rev": "20dfb78b84773b4a31946d91b21b7c22f83e61f0",
-          "sha256": "0arg8bkhiklcfkzr8185s24mbsp95vi4k1wzmi7z582f2zd0vn7c"
+          "rev": "891188e22168e497551dd20731b4db65fa30b247",
+          "sha256": "1i4wjkk3rc0jjvhi3hqril6gil9r6kis2y6zrwgd6izwajx83mik"
         },
         "sandbox": {
           "owner": "vercel",
@@ -1470,8 +1554,8 @@
         "skills": {
           "owner": "vercel-labs",
           "repo": "skills",
-          "rev": "9fd386dbffd0b000ceaeb5e121e065900c01424f",
-          "sha256": "0qpzv67hc38aqh5ilyhq6qd8fvs051v241n12695lykbwy0iykd1"
+          "rev": "df0579f85cb8a360473c921e1343359006100d3c",
+          "sha256": "14ck7k4dmcdpp23lvy912jg9jh48wdvxdjg740318klyma40gfrz"
         },
         "agent-skills": {
           "owner": "vercel-labs",
@@ -1596,8 +1680,8 @@
         "sitecore-skills": {
           "owner": "vercel-labs",
           "repo": "sitecore-skills",
-          "rev": "6190d42d736ca8b576a02578786152b9f9e4cfad",
-          "sha256": "1laz48wkblc6c4p4p8maici8fzgn17bh6hp27z358b0acg55s5nq"
+          "rev": "8d91731a5d7b6cc5caad620aba86ebba4b9668a6",
+          "sha256": "0r4h9pkz3zkriv1z7q6xl7mmd7w7c1iw4wh6kqr65hm9fg07g5z8"
         },
         "py-ai": {
           "owner": "vercel-labs",
