@@ -1,7 +1,6 @@
 {
   config,
   lib,
-  pkgs,
   ...
 }: let
   inherit (lib) mkIf mkEnableOption mkOption types;
@@ -18,128 +17,108 @@
 
   allTools = lib.attrNames (lib.removeAttrs toolDirs ["global"]);
 
-  # Determine if a value is a derivation or a store path string pointing to a directory.
-  # Unlike lib.pathIsDirectory, this works at eval time for unbuilt derivations.
-  isDerivation = x: x ? type && x.type == "derivation";
-  isStorePathString = x: builtins.isString x && lib.hasPrefix builtins.storeDir x;
-  isDirLike = x: isDerivation x || (lib.isPath x && lib.pathIsDirectory x) || isStorePathString x;
-
-  normalizeSkill = name: value:
-    if builtins.isAttrs value && value ? source
-    then value
-    else {source = value;};
-
-  resolveTargetDirs = skill: let
-    scope = skill.scope or "global";
-    scopes =
-      if builtins.isList scope
-      then scope
-      else if scope == "global"
-      then ["global"]
-      else [scope];
+  scopeToDirs = scopes: let
+    normalized =
+      if builtins.isList scopes
+      then scopes
+      else [scopes];
   in
-    map (s: toolDirs.${s}) scopes;
+    map (s: toolDirs.${s}) normalized;
 
-  mkSkillFiles = name: rawSkill: let
-    skill = normalizeSkill name rawSkill;
-    source = skill.source;
-    targetDirs = resolveTargetDirs skill;
-
-    fileEntry =
-      if isDirLike source
-      then {source = source;}
-      else if lib.isPath source
-      then {source = pkgs.writeTextDir "SKILL.md" (builtins.readFile source);}
-      else {source = pkgs.writeTextDir "SKILL.md" source;};
+  mkConfiguredSkillFiles = entry: let
+    drv = entry.drv;
+    plugins = entry.plugins;
+    scopes = entry.scopes or ["global"];
+    prefix = entry.prefix or "";
+    dirs = scopeToDirs scopes;
   in
-    lib.listToAttrs (
-      map (dir:
-        lib.nameValuePair "${dir}/${name}" fileEntry)
-      targetDirs
-    );
+    lib.listToAttrs (lib.flatten (
+      map (plugin:
+        map (dir:
+          lib.nameValuePair "${dir}/${prefix}${plugin}" {
+            source = "${drv}/${plugin}";
+          })
+        dirs)
+      plugins
+    ));
 
-  allSkillFiles = lib.foldlAttrs (acc: name: value: acc // mkSkillFiles name value) {} cfg.skills;
+  isConfiguredEntry = x: builtins.isAttrs x && x ? drv && x ? plugins;
+
+  allSkillFiles = lib.foldl' (acc: entry: acc // mkConfiguredSkillFiles entry) {} cfg.skills;
 in {
   options.programs.agents = {
     enable = mkEnableOption "Declarative agent skills for AI coding tools";
 
     skills = mkOption {
-      type = types.attrsOf (
-        types.either
-        # Simple form: name = derivation | path | string
-        (types.either types.lines (types.either types.path types.package))
-        # Full form: name = { source = ...; scope = ...; }
-        (types.submodule {
-          options = {
-            source = mkOption {
-              type = types.either types.lines (types.either types.path types.package);
-              description = "Skill content (string), path to a file/directory, or a derivation.";
-            };
-            scope = mkOption {
-              type =
-                types.either
-                (types.enum (["global"] ++ allTools))
-                (types.listOf (types.enum (["global"] ++ allTools)));
-              default = "global";
-              description = ''
-                Where to install the skill.
-
-                - `"global"` installs to `~/.agents/skills/` (default)
-                - A tool name installs to that tool's skills directory
-                - A list of tool names installs to multiple directories
-
-                Available tools: ${lib.concatStringsSep ", " allTools}
-              '';
-            };
-          };
-        })
-      );
-      default = {};
+      type = types.listOf types.raw;
+      default = [];
       description = ''
-        Agent skills to install for AI coding tools.
+        List of configured skill entries to install.
 
-        Each attribute name becomes the skill directory name. The value can be:
+        Each entry is created by calling a skill package as a function:
 
-        - **A string**: inline SKILL.md content, installed globally
-        - **A path to a file**: read and written as SKILL.md, installed globally
-        - **A path/derivation to a directory**: symlinked as-is, installed globally
-        - **An attrset** with `source` and optional `scope` for full control
+        ```nix
+        official.encoredev.skills {
+          plugins = ["encore-api" "encore-database"];
+          scopes = ["global" "claude"];  # optional, default: ["global"]
+          prefix = "";                   # optional, default: ""
+        }
+        ```
 
-        Skills are symlinked into the appropriate directories at activation time,
-        so derivation outputs don't need to exist during evaluation.
+        - `plugins`: list of skill names to install from the package
+        - `scopes`: where to install — `"global"` (~/.agents/skills/),
+          or tool-specific: ${lib.concatStringsSep ", " (map (t: ''"${t}"'') allTools)}
+        - `prefix`: string prepended to each skill directory name (to avoid conflicts)
+
+        Skills are symlinked at activation time into each scope directory as:
+        `<scope-dir>/<prefix><plugin-name>/` → `<store-path>/<plugin-name>/`
       '';
       example = lib.literalExpression ''
-        {
-          # Simple: derivation, installed globally
-          encoredev-skills = inputs.agent-skills.packages.''${system}.skills-sh.official.encoredev.skills;
+        with pkgs.agent-skills.skills-sh; [
+          (official.encoredev.skills {
+            plugins = [
+              "encore-api"
+              "encore-auth"
+              "encore-database"
+              "encore-service"
+              "encore-testing"
+              "encore-code-review"
+            ];
+            scopes = ["global" "claude"];
+          })
 
-          # Simple: inline content, installed globally
-          my-custom-skill = '''
-            ---
-            name: my-skill
-            description: Does something useful
-            ---
-            # My Skill
-            Instructions here.
-          ''';
+          (official.anthropics.claude-code {
+            plugins = [
+              "claude-api"
+              "pdf"
+              "docx"
+              "xlsx"
+              "pptx"
+            ];
+          })
 
-          # Full: scoped to specific tools
-          private-skill = {
-            source = ./skills/private;
-            scope = ["claude" "codex"];
-          };
-
-          # Full: single tool
-          codex-only = {
-            source = some-derivation;
-            scope = "codex";
-          };
-        }
+          (official.anthropics.claude-code {
+            plugins = ["mcp-builder"];
+            scopes = ["codex"];
+            prefix = "anthropic-";
+          })
+        ]
       '';
     };
   };
 
-  config = mkIf (cfg.enable && cfg.skills != {}) {
+  config = mkIf (cfg.enable && cfg.skills != []) {
+    assertions =
+      map (entry: {
+        assertion = isConfiguredEntry entry;
+        message = ''
+          programs.agents.skills expects configured entries.
+          Call the skill package as a function:
+            official.encoredev.skills { plugins = ["encore-api"]; }
+        '';
+      })
+      cfg.skills;
+
     home.file = allSkillFiles;
   };
 }
