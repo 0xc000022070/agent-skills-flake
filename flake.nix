@@ -1,9 +1,14 @@
 {
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  inputs.home-manager = {
+    url = "github:nix-community/home-manager";
+    inputs.nixpkgs.follows = "nixpkgs";
+  };
 
   outputs = {
     self,
     nixpkgs,
+    home-manager,
   }: let
     supportedSystems = ["x86_64-linux" "aarch64-linux" "aarch64-darwin"];
 
@@ -45,18 +50,12 @@
 
     devShells = forAllSystems (pkgs: {
       default = pkgs.mkShell {
-        buildInputs = with pkgs;
-          [
-            bun
-            htmlq
-            curl
-            git
-          ]
-          ++ (with self.packages.${pkgs.stdenv.hostPlatform.system}.skills-sh; [
-            official.encoredev.skills
-            official.anthropics.claude-code
-            official.getsentry.cli
-          ]);
+        buildInputs = with pkgs; [
+          bun
+          htmlq
+          curl
+          git
+        ];
       };
     });
   };
