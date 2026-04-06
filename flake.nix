@@ -12,6 +12,9 @@
         system: f nixpkgs.legacyPackages.${system}
       );
   in {
+    homeManagerModules.agents = import ./modules/home-manager/agents.nix;
+    homeManagerModules.default = self.homeManagerModules.agents;
+
     packages = forAllSystems (
       pkgs: let
         lib = nixpkgs.lib;
