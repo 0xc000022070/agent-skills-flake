@@ -7,10 +7,7 @@
     toolDirs = {
       global = ".agents/skills";
       standard = ".agents/skills";
-      codex = ".codex/skills";
-      gemini = ".gemini/skills";
       claude = ".claude/skills";
-      opencode = ".config/opencode/skills";
     };
 
     scopesToDirs = scopes: let

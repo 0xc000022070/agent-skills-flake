@@ -9,10 +9,7 @@
 
   toolDirs = {
     global = ".agents/skills";
-    codex = ".codex/skills";
-    gemini = ".gemini/skills";
     claude = ".claude/skills";
-    opencode = ".config/opencode/skills";
   };
 
   allTools = lib.attrNames (lib.removeAttrs toolDirs ["global"]);
