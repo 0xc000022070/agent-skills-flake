@@ -17,33 +17,40 @@
 
   allTools = lib.attrNames (lib.removeAttrs toolDirs ["global"]);
 
-  scopeToDirs = scopes: let
+  # Convert scopes to directories, handling both built-in tools and workspaces
+  # For workspaces, expands to the workspace scopes
+  scopesToDirs = scopes: let
     normalized =
       if builtins.isList scopes
       then scopes
       else [scopes];
+    expandScope = scope:
+      if builtins.hasAttr scope toolDirs
+      then [toolDirs.${scope}]
+      else if builtins.hasAttr scope cfg.workspaces
+      then
+        let
+          workspace = cfg.workspaces.${scope};
+          workspaceScopes = if workspace.scopes == [] then ["global"] else workspace.scopes;
+        in
+          map (
+            s:
+              if builtins.hasAttr s toolDirs
+              then "${workspace.path}/${toolDirs.${s}}"
+              else throw "Unknown tool scope '${s}' in workspace '${scope}'"
+          )
+          workspaceScopes
+      else
+        throw "Unknown scope '${scope}': not a built-in tool (${lib.concatStringsSep ", " allTools}) or defined workspace";
   in
-    map (s: toolDirs.${s}) normalized;
-
-  # Convert a scope to a directory, handling both built-in tools and workspaces
-  scopeToDir = scope:
-    if builtins.hasAttr scope toolDirs
-    then toolDirs.${scope}
-    else if builtins.hasAttr scope cfg.workspaces
-    then "${cfg.workspaces.${scope}.path}/.agents/skills"
-    else
-      throw "Unknown scope '${scope}': not a built-in tool (${lib.concatStringsSep ", " allTools}) or defined workspace";
+    lib.flatten (map expandScope normalized);
 
   mkConfiguredSkillFiles = entry: let
     drv = entry.drv;
     plugins = entry.plugins;
     scopes = entry.scopes or ["global"];
     prefix = entry.prefix or "";
-    normalized =
-      if builtins.isList scopes
-      then scopes
-      else [scopes];
-    dirs = map scopeToDir normalized;
+    dirs = scopesToDirs scopes;
   in
     lib.listToAttrs (lib.flatten (
       map (plugin:
@@ -78,7 +85,11 @@ in {
             description = ''
               List of tool scopes to use within this workspace.
               When a skill is configured with a scope matching a workspace name,
-              its skills will be installed at `<workspace-path>/.agents/skills/`.
+              its skills will be installed at `<workspace-path>/<tool-scope>/`.
+              If empty, defaults to `["global"]`.
+
+              Example: with scopes = ["claude" "global"], a skill will be
+              installed at both `<path>/.claude/skills/` and `<path>/.agents/skills/`.
             '';
           };
         };
