@@ -51,6 +51,7 @@
     };
 
   suites = {
+    "all-skill-types-integration" = ./all-skill-types-integration.nix;
     "encoredev-skills-installation" = ./encoredev-skills.nix;
     "mk-skill-integration" = ./mk-skill-integration.nix;
     "mk-inline-skill-integration" = ./mk-inline-skill-integration.nix;
