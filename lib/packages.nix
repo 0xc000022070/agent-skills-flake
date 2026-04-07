@@ -11,34 +11,51 @@
     pname ? "agent-skills",
     version ? "dev",
     meta ? {},
+    inlineContent ? {},
   }: let
-    normalizedSrc = normalizeSrc src;
+    isInline = src == "inline";
+    normalizedSrc = if isInline then null else normalizeSrc src;
   in
-    pkgs.stdenvNoCC.mkDerivation {
-      inherit pname version meta;
-      src = normalizedSrc;
+    pkgs.stdenvNoCC.mkDerivation (
+      {
+        inherit pname version meta;
+        src = normalizedSrc;
 
-      dontBuild = true;
-      dontConfigure = true;
+        dontBuild = true;
+        dontConfigure = true;
 
-      installPhase = ''
-        mkdir -p "$out"
-        ${lib.concatMapStringsSep "\n" (plugin: let
-          relPath = skillMap.${plugin};
-          srcPath =
-            if relPath == "."
-            then "$src"
-            else "$src/${relPath}";
-        in ''
-          mkdir -p "$out/$(dirname '${plugin}')"
-          cp -rL "${srcPath}" "$out/${plugin}"
-        '') (builtins.attrNames skillMap)}
+        installPhase = ''
+          mkdir -p "$out"
+          ${lib.concatMapStringsSep "\n" (plugin: let
+            relPath = skillMap.${plugin};
+          in
+            if inlineContent ? ${plugin}
+            then ''
+              mkdir -p "$out/${plugin}"
+              cat > "$out/${plugin}/SKILL.md" << 'CONTENT'
+${inlineContent.${plugin}}
+CONTENT
+            ''
+            else let
+              srcPath =
+                if relPath == "."
+                then "$src"
+                else "$src/${relPath}";
+            in ''
+              mkdir -p "$out/$(dirname '${plugin}')"
+              cp -rL "${srcPath}" "$out/${plugin}"
+            ''
+          ) (builtins.attrNames skillMap)}
 
-        for f in AGENTS.md CLAUDE.md; do
-          [ -f "$src/$f" ] && cp "$src/$f" "$out/" || true
-        done
-      '';
-    };
+          ${if !isInline then ''
+            for f in AGENTS.md CLAUDE.md; do
+              [ -f "$src/$f" ] && cp "$src/$f" "$out/" || true
+            done
+          '' else ""}
+        '';
+      }
+      // (if isInline then {dontUnpack = true;} else {})
+    );
 in {
   inherit mkSkill;
 
@@ -48,9 +65,10 @@ in {
     pname ? "agent-skills",
     version ? "dev",
     meta ? {},
+    inlineContent ? {},
   }: let
     drv = mkSkillDerivation {
-      inherit src skillMap pname version meta;
+      inherit src skillMap pname version meta inlineContent;
     };
   in
     drv
@@ -79,6 +97,7 @@ in {
         drv = mkSkillDerivation {
           inherit (entry) src skillMap;
           pname = "agent-skill-bundle";
+          inlineContent = entry.__inlineSkillContent or {};
         };
       }
     else entry;

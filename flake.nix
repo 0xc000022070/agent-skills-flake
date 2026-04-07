@@ -41,7 +41,7 @@
   in {
     lib = {
       project-factory = mkProjectFactory nixpkgs.lib;
-      inherit (skillApi) mkSkill;
+      inherit (skillApi) mkSkill mkInlineSkill;
     };
 
     homeModules.default = import ./modules/home-manager/agents.nix;

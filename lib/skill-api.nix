@@ -89,6 +89,77 @@
         __agenticSkill = true;
       };
   };
+  buildFrontmatter = {
+    name,
+    description ? null,
+    tags ? null,
+  }: let
+    lines =
+      ["name: ${name}"]
+      ++ (
+        if description != null
+        then ["description: ${description}"]
+        else []
+      )
+      ++ (
+        if tags != null
+        then ["tags: ${builtins.toJSON tags}"]
+        else []
+      );
+  in
+    "---\n" + lib.concatStringsSep "\n" lines + "\n---\n\n";
+
+  mkInlineSkill = skillDefs: let
+    validateSkill = id: def:
+      if !def ? content
+      then throw "mkInlineSkill: skill '${id}' missing required 'content' field"
+      else true;
+
+    skillMap =
+      lib.mapAttrs (
+        id: def:
+          if validateSkill id def
+          then "."
+          else null
+      )
+      skillDefs;
+
+    skillContent =
+      lib.mapAttrs (
+        id: def: let
+          name = def.name or id;
+          frontmatter = buildFrontmatter {
+            inherit name;
+            description = def.description or null;
+            tags = def.tags or null;
+          };
+        in
+          frontmatter + def.content
+      )
+      skillDefs;
+  in let
+    baseEntry = mkConfiguredSkillEntry {
+      src = "inline";
+      inherit skillMap;
+    };
+  in
+    baseEntry
+    // {
+      __inlineSkillContent = skillContent;
+      __functor = _self: {
+        plugins,
+        scopes ? ["global"],
+        prefix ? "",
+      }:
+        builtins.seq (assertKnownPlugins baseEntry.availablePlugins plugins) {
+          inherit plugins scopes prefix;
+          src = "inline";
+          inherit skillMap;
+          availablePlugins = baseEntry.availablePlugins;
+          __agenticSkill = true;
+          __inlineSkillContent = skillContent;
+        };
+    };
 in {
   inherit normalizeSrc discoverSkills assertKnownPlugins;
 
@@ -97,4 +168,6 @@ in {
       inherit src;
       skillMap = discoverSkills src;
     };
+
+  inherit mkInlineSkill;
 }
