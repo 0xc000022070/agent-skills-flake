@@ -271,6 +271,9 @@ async function main() {
 		namespace: "skills-sh",
 		providers: {
 			official: {},
+			...(existingSourcesJson?.providers?.unofficial && {
+				unofficial: existingSourcesJson.providers.unofficial,
+			}),
 		},
 	};
 
