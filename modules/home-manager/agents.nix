@@ -11,10 +11,12 @@
 
   toolDirs = {
     global = ".agents/skills";
+    common = ".agents/skills";
+    standard = ".agents/skills";
     claude = ".claude/skills";
   };
 
-  allTools = lib.attrNames (lib.removeAttrs toolDirs ["global"]);
+  allTools = lib.attrNames (lib.removeAttrs toolDirs ["global" "common" "standard"]);
 
   # Convert scopes to directories, handling both built-in tools and workspaces
   # For workspaces, expands to the workspace scopes
@@ -49,7 +51,7 @@
     entry = pkgLib.materializeConfiguredSkill rawEntry;
     drv = entry.drv;
     plugins = entry.plugins;
-    scopes = entry.scopes or ["global"];
+    scopes = let s = entry.scopes or null; in if s != null then s else cfg.defaultScopes;
     prefix = entry.prefix or "";
     dirs = scopesToDirs scopes;
   in
@@ -69,6 +71,24 @@
 in {
   options.programs.agents = {
     enable = mkEnableOption "Declarative agent skills for AI coding tools";
+
+    defaultScopes = mkOption {
+      type = types.listOf types.str;
+      default = ["global"];
+      description = ''
+        Default scopes to install all skills into, unless overridden on individual skill entries.
+
+        Each skill entry can override this by specifying its own `scopes` attribute.
+
+        Built-in scopes:
+        - `"global"`, `"common"`, `"standard"` (aliases): `~/.agents/skills/`
+        - `"claude"`: `~/.claude/skills/`
+
+        Example: `defaultScopes = ["global" "claude"];` means all skills go to both
+        `~/.agents/skills/` and `~/.claude/skills/`,
+        unless a skill specifies `scopes = ["global"];` to override.
+      '';
+    };
 
     workspaces = mkOption {
       type = types.attrsOf (types.submodule {
@@ -126,15 +146,17 @@ in {
         ```nix
         official.encoredev.skills {
           plugins = ["encore-api" "encore-database"];
-          scopes = ["global" "claude"];  # optional, default: ["global"]
+          scopes = ["global" "claude"];  # optional, default: defaultScopes
           prefix = "";                   # optional, default: ""
         }
         ```
 
         - `plugins`: list of skill names to install from the package
-        - `scopes`: where to install — `"global"` (~/.agents/skills/),
-          tool-specific: ${lib.concatStringsSep ", " (map (t: ''"${t}"'') allTools)},
-          or a workspace name defined in `workspaces`
+        - `scopes`: where to install — one of:
+          - `"global"`, `"common"`, or `"standard"` (all are aliases for ~/.agents/skills/)
+          - `"${lib.concatStringsSep "\", \"" allTools}"`
+          - a workspace name defined in `workspaces`
+          If omitted, inherits `defaultScopes`.
         - `prefix`: string prepended to each skill directory name (to avoid conflicts)
 
         Skills are symlinked at activation time into each scope directory as:
@@ -151,17 +173,16 @@ in {
               "encore-testing"
               "encore-code-review"
             ];
-            scopes = ["global" "claude"];
+            # No scopes specified — will use defaultScopes
           })
 
           (official.getsentry.skills {
             plugins = ["find-bugs"];
-            scopes = ["cc"];  # uses workspace named "cc"
+            scopes = ["cc"];  # Override default scopes for this entry
           })
 
           (official.anthropics.skills {
             plugins = ["pdf" "pptx"];
-            scopes = ["global"];
             prefix = "anthropic-";
           })
         ]

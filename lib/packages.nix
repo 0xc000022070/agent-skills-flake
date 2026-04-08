@@ -90,7 +90,7 @@ in {
 
       __functor = self: {
         plugins,
-        scopes ? ["global"],
+        scopes ? null,
         prefix ? "",
       }:
         builtins.seq (assertKnownPlugins self.availablePlugins plugins) {
@@ -171,7 +171,7 @@ in {
     // {
       __functor = self: {
         plugins,
-        scopes ? ["global"],
+        scopes ? null,
         prefix ? "",
       }: {
         inherit plugins scopes prefix;

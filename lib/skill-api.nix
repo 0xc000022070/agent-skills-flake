@@ -90,7 +90,7 @@
 
     __functor = _self: {
       plugins,
-      scopes ? ["global"],
+      scopes ? null,
       prefix ? "",
     }:
       builtins.seq (assertKnownPlugins availablePlugins plugins) {
@@ -157,7 +157,7 @@
       __inlineSkillContent = skillContent;
       __functor = _self: {
         plugins,
-        scopes ? ["global"],
+        scopes ? null,
         prefix ? "",
       }:
         builtins.seq (assertKnownPlugins baseEntry.availablePlugins plugins) {
