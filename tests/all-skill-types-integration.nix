@@ -54,7 +54,7 @@ in {
     machine.succeed("grep -q '# Inline Tool' /home/testuser/.claude/skills/inline-tool/SKILL.md")
     machine.succeed("test -d /home/testuser/.claude/skills/mvp-builder")
     machine.succeed("test -f /home/testuser/.claude/skills/mvp-builder/SKILL.md")
-    machine.succeed("grep -q 'name: mvp-builder' /home/testuser/.claude/skills/mvp-builder/SKILL.md")
+    machine.succeed("grep -q 'name: MVP Builder' /home/testuser/.claude/skills/mvp-builder/SKILL.md")
 
     machine.succeed("test -d /home/testuser/.agents/skills/root-skill")
     machine.succeed("test -f /home/testuser/.agents/skills/root-skill/SKILL.md")

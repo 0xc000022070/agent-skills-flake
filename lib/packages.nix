@@ -14,7 +14,10 @@
     inlineContent ? {},
   }: let
     isInline = src == "inline";
-    normalizedSrc = if isInline then null else normalizeSrc src;
+    normalizedSrc =
+      if isInline
+      then null
+      else normalizeSrc src;
   in
     pkgs.stdenvNoCC.mkDerivation (
       {
@@ -26,35 +29,44 @@
 
         installPhase = ''
           mkdir -p "$out"
-          ${lib.concatMapStringsSep "\n" (plugin: let
-            relPath = skillMap.${plugin};
-          in
-            if inlineContent ? ${plugin}
-            then ''
-              mkdir -p "$out/${plugin}"
-              cat > "$out/${plugin}/SKILL.md" << 'CONTENT'
-${inlineContent.${plugin}}
-CONTENT
-            ''
-            else let
-              srcPath =
-                if relPath == "."
-                then "$src"
-                else "$src/${relPath}";
-            in ''
-              mkdir -p "$out/$(dirname '${plugin}')"
-              cp -rL "${srcPath}" "$out/${plugin}"
-            ''
+          ${lib.concatMapStringsSep "\n" (
+            plugin: let
+              relPath = skillMap.${plugin};
+            in
+              if inlineContent ? ${plugin}
+              then ''
+                              mkdir -p "$out/${plugin}"
+                              cat > "$out/${plugin}/SKILL.md" << 'CONTENT'
+                ${inlineContent.${plugin}}
+                CONTENT
+              ''
+              else let
+                srcPath =
+                  if relPath == "."
+                  then "$src"
+                  else "$src/${relPath}";
+              in ''
+                mkdir -p "$out/$(dirname '${plugin}')"
+                cp -rL "${srcPath}" "$out/${plugin}"
+              ''
           ) (builtins.attrNames skillMap)}
 
-          ${if !isInline then ''
-            for f in AGENTS.md CLAUDE.md; do
-              [ -f "$src/$f" ] && cp "$src/$f" "$out/" || true
-            done
-          '' else ""}
+          ${
+            if !isInline
+            then ''
+              for f in AGENTS.md CLAUDE.md; do
+                [ -f "$src/$f" ] && cp "$src/$f" "$out/" || true
+              done
+            ''
+            else ""
+          }
         '';
       }
-      // (if isInline then {dontUnpack = true;} else {})
+      // (
+        if isInline
+        then {dontUnpack = true;}
+        else {}
+      )
     );
 in {
   inherit mkSkill;
@@ -138,6 +150,9 @@ in {
           if [ -z "$skill_name" ]; then
             skill_name=$(basename "$skill_dir")
           fi
+
+          # Normalize to kebab-case: lowercase, spaces/underscores to hyphens
+          skill_name=$(echo "$skill_name" | tr '[:upper:]' '[:lower:]' | tr ' _' '--' | sed 's/--*/-/g; s/^-//; s/-$//')
 
           if [ -d "$out/$skill_name" ]; then
             continue

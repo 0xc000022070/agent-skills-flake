@@ -2,12 +2,14 @@
   normalizeSrc = src:
     if builtins.typeOf src == "path"
     then src
+    else if builtins.isAttrs src && src ? outPath
+    then src
     else let
       coerced = builtins.tryEval (toString src);
     in
       if coerced.success
       then /. + builtins.unsafeDiscardStringContext coerced.value
-      else throw "mkSkill expects `src` to be a path-like value such as `./.` or `builtins.fetchGit { ...; }`";
+      else throw "mkSkill expects `src` to be a path-like value such as `./.`, `builtins.fetchGit { ...; }`, or a derivation like `pkgs.fetchFromGitHub { ...; }`";
 
   rootSkillName = src: let
     parts = lib.filter (part: part != "") (lib.splitString "/" (toString src));
