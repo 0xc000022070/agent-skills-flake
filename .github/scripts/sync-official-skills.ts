@@ -271,7 +271,7 @@ async function main() {
 			if (!sha256) {
 				const existing =
 					existingSourcesJson?.providers?.official?.[org]?.[repo];
-				if (existing && existing.rev && existing.sha256) {
+				if (existing?.rev && existing?.sha256) {
 					sources.providers.official[org][repo] = existing;
 				}
 				continue;

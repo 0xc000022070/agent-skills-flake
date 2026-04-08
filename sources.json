@@ -1,7 +1,5 @@
 {
-  "version": "1.0",
-  "updatedAt": "2026-04-07T13:18:24.188Z",
-  "namespace": "skills-sh",
+  "updatedAt": "2026-04-08T00:18:23.356Z",
   "providers": {
     "official": {
       "anthropics": {
@@ -1757,6 +1755,16 @@
         }
       },
       "wordpress": {}
+    },
+    "unofficial": {
+      "daffy0208": {
+        "ai-dev-standards": {
+          "owner": "daffy0208",
+          "repo": "ai-dev-standards",
+          "rev": "32c3241e48f9fe2c3de611ad9168503ea41f28fd",
+          "sha256": "05c5ppxi7b34qxygvyawm34vyqlvkm78rchn56p6jgsysyq4ym59"
+        }
+      }
     }
   }
 }

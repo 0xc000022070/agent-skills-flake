@@ -1,8 +1,8 @@
-name: Update Sources
+name: Sync unofficial skills
 
 on:
   schedule:
-    - cron: '0 0,12 * * *'
+    - cron: "0 0,13 * * *"
   workflow_dispatch:
 
 jobs:
@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -27,7 +27,7 @@ jobs:
           git config user.email "skills-updater[bot]@users.noreply.github.com"
 
       - name: Sync providers
-        run: nix develop --command bun scripts/sync-providers.ts
+        run: nix develop --command bun .github/scripts/sync-unofficial-skills.ts
 
       - name: Commit
         run: |

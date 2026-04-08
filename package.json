@@ -3,6 +3,10 @@
 	"module": "index.ts",
 	"type": "module",
 	"private": true,
+	"scripts": {
+		"sync:official": "bun ./scripts/sync-providers.ts",
+		"sync:unofficial": "bun ./.github/scripts/sync-unofficial.ts"
+	},
 	"devDependencies": {
 		"@types/bun": "latest"
 	},
