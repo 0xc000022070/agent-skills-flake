@@ -61,8 +61,46 @@
     "prefix-and-scopes" = ./prefix-and-scopes.nix;
     "workspaces" = ./workspaces.nix;
   };
+
+  exampleChecks = {
+    "example-1-minimal-devshell-shell" = (
+      let
+        flake = import (self + "/examples/1-minimal-devshell/flake.nix");
+        outputs = flake.outputs {
+          self = self;
+          nixpkgs = nixpkgs;
+          agentic-flake = self;
+        };
+      in
+        outputs.devShells."x86_64-linux".default
+    );
+    "example-2-multi-source-shell" = (
+      let
+        flake = import (self + "/examples/2-multi-source/flake.nix");
+        outputs = flake.outputs {
+          self = self;
+          nixpkgs = nixpkgs;
+          agentic-flake = self;
+        };
+      in
+        outputs.devShells."x86_64-linux".default
+    );
+    "example-3-home-manager-config" = (
+      let
+        flake = import (self + "/examples/3-home-manager/flake.nix");
+        outputs = flake.outputs {
+          self = self;
+          nixpkgs = nixpkgs;
+          home-manager = home-manager;
+          agentic-flake = self;
+        };
+      in
+        outputs.homeConfigurations.yourname.activationPackage
+    );
+  };
 in
   (pkgs.lib.mapAttrs (name: path: mkTestSuite name path) suites)
+  // exampleChecks
   // {
     "mk-skill-lib" = import ./mk-skill-lib.nix {
       inherit pkgs;
