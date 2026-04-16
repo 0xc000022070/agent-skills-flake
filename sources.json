@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-04-16T03:38:43.855Z",
+  "updatedAt": "2026-04-16T13:22:49.061Z",
   "namespace": "skills-sh",
   "providers": {
     "official": {
@@ -88,8 +88,8 @@
         "mcpc": {
           "owner": "apify",
           "repo": "mcpc",
-          "rev": "7bf8e3964e2f12489d57806c86045dfe466db9ec",
-          "sha256": "0s12pf96n7iyl7ykkvjmgqriirlgzp8hsqwsyvq179af5y4i5gak"
+          "rev": "9617800f921f2d82356b56da132d75ab529b0d9c",
+          "sha256": "0954vfbfy1s18gx5nf03py9ng4swpm1ayq2myl8xlbcfzfkm8srk"
         }
       },
       "apollographql": {
@@ -112,8 +112,8 @@
         "agent-skills": {
           "owner": "auth0",
           "repo": "agent-skills",
-          "rev": "8984d7d2d2cbed47973bde75cd8841b53e7a8e03",
-          "sha256": "09y9xjy4zjdcidfc1w0cg8da3amy96ff9v4jr0wky5avfl6g137z"
+          "rev": "24b0206af183173a8f6425aed000a308a4e32369",
+          "sha256": "0a47rrlw6mpb91s5nh2dvzazjxqazkp91jxslr3l6w4fdginx4ax"
         }
       },
       "automattic": {},
@@ -162,8 +162,8 @@
         "clients": {
           "owner": "bitwarden",
           "repo": "clients",
-          "rev": "3d2e552e68da9a816ca039eeaa196f16f6d2f7a7",
-          "sha256": "14c3mnyzwaijl1rahpyf08j4vshcqdh433ws6kkgbnp85vcyfh6y"
+          "rev": "becc7ed4e196bd8c65abc6a018662ffcf062a19c",
+          "sha256": "1wn1zdiyfw74yvi716z2kz29m1shsbimhs30y8i97zhysda2yj7l"
         }
       },
       "box": {},
@@ -181,6 +181,12 @@
           "repo": "browser-use",
           "rev": "702b7352c3dc1d39ab8daef2f076dfe7adcfa1c3",
           "sha256": "12kdk5niyqvd14kas8djbk4mkz4qh1mg4zlmvwgcpdjaaspjayca"
+        },
+        "video-use": {
+          "owner": "browser-use",
+          "repo": "video-use",
+          "rev": "1ffa36d6812df17dcc334bdaa018dd12bd214b02",
+          "sha256": "1lbwaqqb2i3wnj1xh3cjg918ja7salny8pmawdma8mwgbjm7lblc"
         }
       },
       "browserbase": {
@@ -201,8 +207,8 @@
         "agent-device": {
           "owner": "callstackincubator",
           "repo": "agent-device",
-          "rev": "364844e01dd65d47ff2e191d93dd375b5d962363",
-          "sha256": "1m48m92ksqrsivabkwj8sr0fx56yx8qj1zy9iaksgjgarc72k8mj"
+          "rev": "2c41225b7b099e18a5e3b342a36c224a4f8d5b43",
+          "sha256": "0y1yq629p9gdm793g1skpwndx51sgw0ir78pjzy3c9izahaqj2hl"
         },
         "rozenite": {
           "owner": "callstackincubator",
@@ -267,14 +273,14 @@
         "skills": {
           "owner": "cloudflare",
           "repo": "skills",
-          "rev": "70c9cb7a211b1b6922712142e0daad4fadf9022b",
-          "sha256": "1lgprdxq4g5arvf24933afkq8v37d0c6ydlklxwbqg47risvimwx"
+          "rev": "0397d7d88fa6ac7517a88389622eb0799e86ded2",
+          "sha256": "1qkv73xh891cdnaaz3548rxyc3dz8jqgqbbh4k80bqd4m4gsccss"
         },
         "vinext": {
           "owner": "cloudflare",
           "repo": "vinext",
-          "rev": "9791a63381b73f2905deb88c35bb27c84897d9f3",
-          "sha256": "1yakzbiii6f19ci4cqgah3yjqkxynfixlzfi4bvab6hdhqzfn727"
+          "rev": "672da73de435272fc3039595d9e099c648cf8ecb",
+          "sha256": "0w3p66s87dina5c7rfdjnaqw81chhby43g8xdr3s19gidgcv46sc"
         },
         "workerd": {
           "owner": "cloudflare",
@@ -340,8 +346,8 @@
         "pup": {
           "owner": "datadog-labs",
           "repo": "pup",
-          "rev": "a7080855221590b931868706927e425781a5e743",
-          "sha256": "0i2mwnzbj758bwsrx4f0b4jmqc2v86y7fbfpp1z5w4gqcyfj4zpi"
+          "rev": "11a848404f2db0fb88e6152c7430f626c411f367",
+          "sha256": "0gsh682hvg67imlg9mr199gkxxi34lsia2iiznkddpncqjgvxhbp"
         }
       },
       "dbt-labs": {
@@ -524,14 +530,14 @@
         "website": {
           "owner": "flutter",
           "repo": "website",
-          "rev": "6315ff309a93bbd2ec72f5008db03a09193e318e",
-          "sha256": "0y8vz747l8y7s1d1khd8qqngslv68hnchgbyk13l6djn7b27yak9"
+          "rev": "b4eef50fdd9dfb32541a9aecf26023ee8f114525",
+          "sha256": "01wp5fy4vcmiva9f5s8d30xfhapyls0lql6p61bkdfa31b08wbr5"
         },
         "flutter": {
           "owner": "flutter",
           "repo": "flutter",
-          "rev": "f78126786f9ad648726c42783e5de35135b6916d",
-          "sha256": "0qr1gsg3xpascx5625hk940x1fn5s0wc49g1s5zwvrj0spxndyaz"
+          "rev": "e206d86db36452df295e9429dcb986dd8a050682",
+          "sha256": "14212li4kghpp51kabpcli8vznxlxjgjxyhr0vncxczgjdsp3w6n"
         }
       },
       "getsentry": {
@@ -636,8 +642,8 @@
         "gh-aw": {
           "owner": "github",
           "repo": "gh-aw",
-          "rev": "cb3de4ecbbff057b793788518499fd25a8150684",
-          "sha256": "1qy9qb9059k07x3kclg6zbhkgd590bg522xrpg1pfidz8w9lwp7j"
+          "rev": "f42052bdb131bfe34e7766677bf1a5672e2892ee",
+          "sha256": "1455gk4pc58msz8bm1vmyd5vn8vkhpq5wy2wvxkpm7bfh1m5nayb"
         },
         "copilot-plugins": {
           "owner": "github",
@@ -648,8 +654,8 @@
         "gh-aw-firewall": {
           "owner": "github",
           "repo": "gh-aw-firewall",
-          "rev": "2277b4b2a022bbd29194e94c78d609ac4bc07f5b",
-          "sha256": "1qmr4xdnk1xfr9yd9ij09bn0928xjkqb5za2bilcsl7k39yf3562"
+          "rev": "4681e041aeff6dae03bbabe035f6af4eecd5623b",
+          "sha256": "139v642i2cyc7s18rsx22c5d2a5jmldirjkcqf3nyp2vw3jsvqjp"
         }
       },
       "google-gemini": {
@@ -710,14 +716,14 @@
         "skills": {
           "owner": "huggingface",
           "repo": "skills",
-          "rev": "3b092681dd0efe8883ba734b535cdd291d70dfc5",
-          "sha256": "1g0sssy23khlsyw2pbb14kb46r9hzd1n440n0j7arrhiaa5c2hs0"
+          "rev": "061ab494cb145f43ae8f218939b99160e2c61c58",
+          "sha256": "1vwwa9z5afp1hbx7fnl0zq8n0n0x5kpyzakifgqk6czyhad4y2mn"
         },
         "kernels": {
           "owner": "huggingface",
           "repo": "kernels",
-          "rev": "84629d2979790e6c1749d32a9df4813053d330bd",
-          "sha256": "0dm892vrf18kl3xwfhqd4kb88amvgdgnj84xpwjg4d1ic499c4sq"
+          "rev": "1f68f456cb6b2de2e69e60a55a13f04b6690ffbf",
+          "sha256": "1idw5wi0d1f8qfmkis8wsiibxd4s5ng1pd6vj8qr0igixy5gg1hf"
         },
         "chat-ui": {
           "owner": "huggingface",
@@ -728,20 +734,20 @@
         "transformers": {
           "owner": "huggingface",
           "repo": "transformers",
-          "rev": "8426e7e63d49d9c3b5f0c09d43e792a59c75c62c",
-          "sha256": "0glzd7rbzw1g0n0wqa5s3cy8nxvnip051akslm1m8fh669v4h168"
+          "rev": "bc7ee236fca35e771b6b393178a192add1469243",
+          "sha256": "10fq11jzrrdgl0405k4ja7vjcpz9rq674f7dzhswyj487isc43f9"
         },
         "huggingface_hub": {
           "owner": "huggingface",
           "repo": "huggingface_hub",
-          "rev": "26d78866540f382e5d9ae958a9af0c2b56a32676",
-          "sha256": "09glc542qc4kv30hkl3rp59rrbafjg2m3zc7vcd92kzpswxa3f9l"
+          "rev": "370dde27b740912f9ec46f047c9a1583860315d3",
+          "sha256": "0yjfwlksk9q9vzvsw6m2bipm3zpzilz4bskv2hpjl23vcb357584"
         },
         "trl": {
           "owner": "huggingface",
           "repo": "trl",
-          "rev": "4a2f75039be0a0a3f0f6f16833bad2c13cadd3ee",
-          "sha256": "0jz9km4wrxbddxg99ws4rqg7598r0n31q1c05cr3mqmpkisjvcrr"
+          "rev": "d75a550c7fec0ef546bb681857e6d778548a3f1b",
+          "sha256": "1hik7a9c5g8i5sp0pbbq7j76jd653mbyy4rlv9xgacqmsmfxsr5m"
         }
       },
       "kotlin": {
@@ -762,8 +768,8 @@
         "deepagents": {
           "owner": "langchain-ai",
           "repo": "deepagents",
-          "rev": "1f3e18e9f57328f2f005bace0288d3957a5c702f",
-          "sha256": "1925b5hmhkrzf25wa9q3if2fza594p014csymn6vdm7mdgdl3n9f"
+          "rev": "51f153247961ce8774725a8b8dfd1aa04c25c5da",
+          "sha256": "0k7xqwphbf20nd0gsdxz7i185n3q82wil51v2p1pyyq12w4akz93"
         },
         "langsmith-skills": {
           "owner": "langchain-ai",
@@ -774,8 +780,8 @@
         "skills-benchmarks": {
           "owner": "langchain-ai",
           "repo": "skills-benchmarks",
-          "rev": "638a366f5cbc44d4f7e0123e3981b08d4a04c359",
-          "sha256": "00mqkp73rwn6n68cljr5q23gvnr0y4bgbpx1fz4rvka4g4zk6dbf"
+          "rev": "e26a75ddd24b311c2ddd91363a3502db3879c600",
+          "sha256": "15vpahjjjaphp7ji4i6jii07pf6qqapqk4kj12s97n4ax3603y06"
         },
         "deepagentsjs": {
           "owner": "langchain-ai",
@@ -800,8 +806,8 @@
         "langfuse": {
           "owner": "langfuse",
           "repo": "langfuse",
-          "rev": "3e61ecc84f2f9bb4b8c1e8851706d46b53114365",
-          "sha256": "1s1mbk0hxv0f2sgdfxidyzcf511ywfl9kwcz1lv8xyd00nmkkv5m"
+          "rev": "2839f659bb36176b582d0b9144d74a525956fb76",
+          "sha256": "1zf5adp1l6b24zjcpdi58gjgc96iy4r18ylb3wrkawzf2fw0a2yv"
         }
       },
       "launchdarkly": {
@@ -869,8 +875,8 @@
         "mastra": {
           "owner": "mastra-ai",
           "repo": "mastra",
-          "rev": "56e177b0aac5dbc2872fce4a9f2ec53f1f0d9dfd",
-          "sha256": "0y53w4b3p8ckl0ziix77frcpqz3zbnkdxri1wypprrjp53ddkhl1"
+          "rev": "d647793010ab4de60bb524769a51cd32d7eba8d3",
+          "sha256": "1rgc02a5jd13c664ia1mgbrgnv243p88a16cqmfa457zd8npmkvq"
         }
       },
       "mcp-use": {
@@ -923,8 +929,8 @@
         "vscode": {
           "owner": "microsoft",
           "repo": "vscode",
-          "rev": "55c188160488261660f61af55522505010d48795",
-          "sha256": "05xcl58wyg946a6y395chjnfmd19z9rpimmb3c73pzaj9j7515y8"
+          "rev": "85e03a4fce8f3e64ce0d7d9b6ddc2da8b50f5600",
+          "sha256": "17nz748nd80y221gjnr70np64swk4jkzy286z5sdnm51v4sws8q0"
         },
         "skills": {
           "owner": "microsoft",
@@ -935,8 +941,8 @@
         "playwright": {
           "owner": "microsoft",
           "repo": "playwright",
-          "rev": "ff3852fbdcc068723d62e768997aeb5c1edcd0d5",
-          "sha256": "16a6gmi2pikad2mh6gc9zlyyhnfhfbgbxrnz0nmvq0iik1b37bcb"
+          "rev": "9d005875b2a66858b02001043b10f03f86fd2cd2",
+          "sha256": "1l9pkn21jvs8hrnnfwr7vwjngjvf253f1pmgj4ppyn3a0lnbfawg"
         },
         "agent-skills": {
           "owner": "microsoft",
@@ -959,8 +965,8 @@
         "agent-framework": {
           "owner": "microsoft",
           "repo": "agent-framework",
-          "rev": "f112150cfbc4d514b21b60a81bbe5239b4b2c81f",
-          "sha256": "0scf5v364l8f2wwqcl52sb089h21kih00sk8ywdhnvrb9kw9zyds"
+          "rev": "a2044829b13659ac40f7f4112f74efcce15397cc",
+          "sha256": "11xd9d4ypgnaap6dh258w3sh2xwark3kb7xxc0cb94660b245vvs"
         },
         "hve-core": {
           "owner": "microsoft",
@@ -977,14 +983,14 @@
         "fabric-cli": {
           "owner": "microsoft",
           "repo": "fabric-cli",
-          "rev": "4cc2ddcbd393499d6421476a0c382b81bf5a05b1",
-          "sha256": "0h3p3v2a3xambcl8701a6b232bzq0mi4li32qhbwnywzm285bv2j"
+          "rev": "a41a454e33388504e3e8aafbbd4d7222056a50d9",
+          "sha256": "1ba7qhd6m971m4mlsfz3xk741yrh3alz95b12wy73z0qma1vqgmf"
         },
         "powertoys": {
           "owner": "microsoft",
           "repo": "powertoys",
-          "rev": "578554d157c21a7c8033e6a40e4211569948618f",
-          "sha256": "1hqlzarp8mqgbbavns9l8y1dwgr0i6c6a5c99js1gc0vhgwhk43c"
+          "rev": "088da21a70bc9600e34805082bc3bdf72887cbc5",
+          "sha256": "0cj8k5ri1q2dfgzkv8f7xxzgld227z7igwh66xjc7zgj1nqf53kb"
         },
         "vscode-copilot-chat": {
           "owner": "microsoft",
@@ -1016,11 +1022,17 @@
           "rev": "87bc55342e6313a5677f00d3e5e574b441ae60bb",
           "sha256": "0an826zfnpl4vg80h62q88fxa97igmg22x5y5r3sjvljsyk1dxxp"
         },
+        "debugpy": {
+          "owner": "microsoft",
+          "repo": "debugpy",
+          "rev": "0f037adec6fb2f61ad225849e953188ec349adbc",
+          "sha256": "1bsm92ag9p6zjvc92r8xxxczlhvicm0pys58nd7yydwgxrmmcmy4"
+        },
         "vscode-cosmosdb": {
           "owner": "microsoft",
           "repo": "vscode-cosmosdb",
-          "rev": "4fa3e02edd373e1d11033b4fbe745158951732f6",
-          "sha256": "07nrys2cyv74czqdvw5c28rsf1366bmns6dxz6zd2b0p0z19yya2"
+          "rev": "a16abae8c533cdcc9094abfb58651928f68b71f8",
+          "sha256": "10c17v0z15ipwjffwia5afg53jq51d02pavvki7rrvhbx5gxr76r"
         },
         "winappcli": {
           "owner": "microsoft",
@@ -1028,17 +1040,11 @@
           "rev": "15e81bddae8be0b68355f0abd40c5647652545f1",
           "sha256": "1fvq3lyhs329k08nvwbsm3v0xz8h9n87pwiaqhygvln5gfsqqw5f"
         },
-        "debugpy": {
-          "owner": "microsoft",
-          "repo": "debugpy",
-          "rev": "0f037adec6fb2f61ad225849e953188ec349adbc",
-          "sha256": "1bsm92ag9p6zjvc92r8xxxczlhvicm0pys58nd7yydwgxrmmcmy4"
-        },
         "rushstack": {
           "owner": "microsoft",
           "repo": "rushstack",
-          "rev": "b916df102b5e35c298e70ade814d0b788727740c",
-          "sha256": "1n1wmv58sq6wlfgjvfgxamzx4gdj005irn98smh1331y90zg18y9"
+          "rev": "223d5d2db2acf2b9470198cf6f839ccfcfaec7dc",
+          "sha256": "1si346nc8s8yqfq9r3h31bdxiamaimvjxv574lfq8gz9n3nzl0qk"
         },
         "apm": {
           "owner": "microsoft",
@@ -1052,17 +1058,23 @@
           "rev": "4f16293c84e10250a2de509bedc27f6ec4138fee",
           "sha256": "14i6qr6zdwar9vn8hp8dnsmhchyf1i9zbvi4sffwb0iszy02zac7"
         },
-        "agent-governance-toolkit": {
-          "owner": "microsoft",
-          "repo": "agent-governance-toolkit",
-          "rev": "9897a5b5a7418ef08093b36bb25831504752ffc7",
-          "sha256": "1mmnzlpkfrpc6gbikpna5iqmn6hpihpr1pliadp0rz3f9hplq58y"
-        },
         "foundry-ai-solution-templates-creation": {
           "owner": "microsoft",
           "repo": "foundry-ai-solution-templates-creation",
           "rev": "f39a20a6efad9e13b3e2f6233b1867b88931fadd",
           "sha256": "0riih40y1gv1mzjbabq6m7qgwcpmgxn8xz544abyxmf6blr8gamm"
+        },
+        "agent-governance-toolkit": {
+          "owner": "microsoft",
+          "repo": "agent-governance-toolkit",
+          "rev": "995de6405eb336be786fe8284108d3d27767b219",
+          "sha256": "179yhmvrqi8s2yklz69yn0lzclp4vh47fb1wdcq9a911wci70wir"
+        },
+        "agent365-devtools": {
+          "owner": "microsoft",
+          "repo": "agent365-devtools",
+          "rev": "d2d557d2ef78174ba19560e45ff818834852f9ed",
+          "sha256": "06d1vvq541n5mw32zsxb1skd55yw6k8qjl0a6cjbzmjljj112mwa"
         },
         "fluidframework": {
           "owner": "microsoft",
@@ -1127,14 +1139,14 @@
         "codex": {
           "owner": "openai",
           "repo": "codex",
-          "rev": "d97bad1272ce9ad6cc353b33d92df40d0cbc9436",
-          "sha256": "1fv0bpja91cmh5dvcc0vig0c2jnq7difbq71byq9yk0lmx3appdy"
+          "rev": "d4223091d07a7647535b46795aa87cf78550e3f4",
+          "sha256": "1xvah1hq3lgl15mwg5z2vzz391j5jlha5r4xc7vnrqjdmyf2msfj"
         },
         "openai-agents-python": {
           "owner": "openai",
           "repo": "openai-agents-python",
-          "rev": "5086b2490eaa179aeb866a08009df6ba180c2179",
-          "sha256": "0an75vyg49gm7kx18anb17mmy0vsxrckap7h97gqapi9pv2x35rf"
+          "rev": "4f3c8a5379c1b44527c9a0a159d20b46755f4eaf",
+          "sha256": "0g8in9zkraqkqd0z62vpaginr51pzib52rg5b9fl32124y2yzwr8"
         },
         "openai-agents-js": {
           "owner": "openai",
@@ -1157,22 +1169,22 @@
         "plugins": {
           "owner": "openai",
           "repo": "plugins",
-          "rev": "99f0215239c31991c58e10efef7e9a4e50481445",
-          "sha256": "0fi1qxkbs595dvqxy82sycl7w2d274gdhwq2gq932kw20qm463aw"
+          "rev": "3531e78573e3b3791b585c49528ee101181dc332",
+          "sha256": "0ih8z9ysbm9ckg461i2lvz31fd8wv5ky0nk9hpclg91x89gpq8dw"
         }
       },
       "openshift": {
         "release-tests": {
           "owner": "openshift",
           "repo": "release-tests",
-          "rev": "529b0e92ec4ecce222bbb7c5e9e99ce86c32a6d8",
-          "sha256": "1wmx4imc7lrmcl3mh7bh23lcsv0svzvsqarflk3d428f7l0z36xa"
+          "rev": "d4a2be4f741c0f752878fe674dce5d1a4aded347",
+          "sha256": "0kdvzzfjjn7w1qhhg1aqbk2zjlx5mprbssl46815kw820biqjw1r"
         },
         "oc": {
           "owner": "openshift",
           "repo": "oc",
-          "rev": "66dee73f66c4f048c333c6a77d76871872027896",
-          "sha256": "0p1m17v4192vdqmsbpdn7mcw89rijgbf80mvjxhkv9ai82nwkh0m"
+          "rev": "8d2e6251f08afc5ff88d97ae44c75cbf08aa377d",
+          "sha256": "0fhrv4nz8lv6i0apj8vwbgbs5lzzihygg7fajnschpnf6pz57qdp"
         }
       },
       "planetscale": {
@@ -1234,16 +1246,16 @@
         "agent-skills": {
           "owner": "pulumi",
           "repo": "agent-skills",
-          "rev": "b6214ca30c8f211e829c17a51d9b1ce152c5f260",
-          "sha256": "0v33y8iq7r0c68zb70gvxkl4rijhzcp2dqinikzbmg4frlx8598p"
+          "rev": "2b15400d10b1501be86ab381ba9f0ffaf4b1461d",
+          "sha256": "097rjc9wbb514wkpaqdiy352ynl04sssk6yn75zhv1wldcyn1xpw"
         }
       },
       "pytorch": {
         "pytorch": {
           "owner": "pytorch",
           "repo": "pytorch",
-          "rev": "40606b752ad0028ad748a5446574d3847ab56417",
-          "sha256": "1wv5jpmr85lb5dmy27p89h82k5yk126dqj726h7zifkszj8dxjnz"
+          "rev": "94022a3f95fb55dcdd6863f2385515632b6fa0ed",
+          "sha256": "0003537zkvn2sjh6llf1p8rslxq8f71xwxmwf4j2041gz3wylqf2"
         }
       },
       "redis": {
@@ -1256,8 +1268,8 @@
         "redisinsight": {
           "owner": "redis",
           "repo": "redisinsight",
-          "rev": "0e49d734846d82077ddbcad0a81bfa65b09f1a7c",
-          "sha256": "0l8kl9i4p4qpwsvc3lyb21dsjz2vqhi5sn2anmq74v767fp7184w"
+          "rev": "b771e3087ea1171612b0d8683e86d42bbed6aaa9",
+          "sha256": "1fr2rs6m6s81ap2xizgr9n67bgzg9rcmm5chy8l7y0w02c6bdm3i"
         }
       },
       "remotion-dev": {
@@ -1272,8 +1284,8 @@
         "resend-skills": {
           "owner": "resend",
           "repo": "resend-skills",
-          "rev": "a8b0428f23b965aa70fedf82fa444d2feccb0bdc",
-          "sha256": "0lpgxb7spfi7xdwy1zk2x3mzzwkj6rklrk4fw4y08iyabpcwjd3f"
+          "rev": "f1f778b986e02e1d3a8660069ed3f01b63bedfef",
+          "sha256": "1izdfzqfj7z37cqhkjlpjkiwzkhc9a7g4bdpl27hgz41r6c91nm4"
         },
         "email-best-practices": {
           "owner": "resend",
@@ -1296,8 +1308,8 @@
         "resend-cli": {
           "owner": "resend",
           "repo": "resend-cli",
-          "rev": "a640af7ac1f179588cb679b5716c5ea9d62a7afe",
-          "sha256": "0mvri10ir7hi8s5ar48sv78gdk9c6x5yh07a8wjly9j29cfm5lfg"
+          "rev": "de4646d3e90a06ad2b7368d9d6186289dc9730ea",
+          "sha256": "19k7i0hnzags878xzwyr96anyriq4d8273alqp7d9v5ybac52sp2"
         },
         "email-skills": {
           "owner": "resend",
@@ -1356,14 +1368,14 @@
         "sanity": {
           "owner": "sanity-io",
           "repo": "sanity",
-          "rev": "0ab91e811ef4658da7d3c3a81b3b7030db258844",
-          "sha256": "0sc8k2yi5yh8p18xpsfn2akc3z98aihr3kakv1jxc7kizd7k1x0m"
+          "rev": "047297dd60f7ff341a3f3aef198374a58577c443",
+          "sha256": "04a10hhpnlxh98i3g20mab40p1pfh6rr4v2rpmgzcxhx1nx4r5z3"
         },
         "plugins": {
           "owner": "sanity-io",
           "repo": "plugins",
-          "rev": "d37a6cb1792745be66349201f7e9815daae3be38",
-          "sha256": "16i7hjsj89mpscz927imizfdgs1y2cvnpf3yhnvhn9csy9i773kb"
+          "rev": "7103fa0ff390abc1a605244a38ec043abf3fcbe0",
+          "sha256": "03q4lqyhxblk158a4y0gw9hny7gd05q0qikdibl129cyg7l9y1hs"
         }
       },
       "semgrep": {
@@ -1476,6 +1488,12 @@
           "repo": "skills-temporal-cloud",
           "rev": "2d867d1f96ae388ed27f1c48aec817f210b6cd3d",
           "sha256": "04bpbzf9sb9p258alr3kv163gvfgd5xxws8pma8bczr2vk4i40aj"
+        },
+        "agent-skills": {
+          "owner": "temporalio",
+          "repo": "agent-skills",
+          "rev": "2357cf8eacfb6152f1b880d3916d1ef599eb40a4",
+          "sha256": "1wh09lnr8xdiy3dx0pinf1cngzfcbqgc95rrkkswym33pmdh1fgw"
         }
       },
       "tinybirdco": {
@@ -1490,8 +1508,8 @@
         "tldraw": {
           "owner": "tldraw",
           "repo": "tldraw",
-          "rev": "31f6505132c622333bd6e11c963932d9fc29e099",
-          "sha256": "0nhsfm895ihvfmnsqmgdbd8h9zyb0rfrk5rvdxl6c0maam645izz"
+          "rev": "32641bcd6d72c8b3e63b0b396f08fd9edac787e5",
+          "sha256": "1s4pgk5k2rmckx28kzk0s3gshh9v0fm66f0k0ccm2zj54r2rjxvp"
         }
       },
       "triggerdotdev": {
@@ -1504,8 +1522,8 @@
         "trigger.dev": {
           "owner": "triggerdotdev",
           "repo": "trigger.dev",
-          "rev": "7c95207486270223c522e1e9a3e7b46e9b52c114",
-          "sha256": "0vp83i58xw5fxbh381rmssgg763xfrxrhp8zvjdn143ik1m7ka4s"
+          "rev": "93f2ca6bf49381f169fd7733a212e1ca9496c87a",
+          "sha256": "04fzhibls02vmhgnh9r27vhdm174rzcgagv7y2dzb3skpfdx08cx"
         }
       },
       "upstash": {
@@ -1556,14 +1574,14 @@
         "ai": {
           "owner": "vercel",
           "repo": "ai",
-          "rev": "e7325dec24c62e833537d2ef9814da595e46def4",
-          "sha256": "1iwhamf0d6rab0ax25pk1jrsarrawpk8fkavil19s4xxvdibgymp"
+          "rev": "c1e4364558cf9201990e46f60c8ee3faa9578cd4",
+          "sha256": "1cly430h5c6sgqd6nmyz4yb2d5d49hipzznsx33wan6xv9azz0si"
         },
         "turborepo": {
           "owner": "vercel",
           "repo": "turborepo",
-          "rev": "3188a5662c7eb14eb49d443a9f3bc4d7ee176e4b",
-          "sha256": "1c6gl3plphc6gybmk6fwjj8rnnqwvr1k77vs6g5pm4izz1vx7mqr"
+          "rev": "90d1430f58a62f916dcd9f47c748f53087cd7613",
+          "sha256": "1hr7047b5pif42spi490ljccdmkrqanzbl82ab7pqflc494m2qbc"
         },
         "ai-elements": {
           "owner": "vercel",
@@ -1586,20 +1604,20 @@
         "vercel": {
           "owner": "vercel",
           "repo": "vercel",
-          "rev": "a426062c91e63d613dee956e389f4763e8f7c781",
-          "sha256": "0zzm2dbzhwvnfnaj72yssp0b27nz4py0k8k12rhr6950by5cyjna"
+          "rev": "232b45fd82adf4a8d538a853bfc1df7a5d16f4c9",
+          "sha256": "0rhb7ri34r2dv0002ix4aqp8xrrh97x04l9dyxfnhjf76jc3a301"
         },
         "workflow": {
           "owner": "vercel",
           "repo": "workflow",
-          "rev": "173756dc4d097fd90432e2c38c91ce1b959a6352",
-          "sha256": "1yapzw18dyih6rn5lfyx04pw4v3h9r40gi0k493yvr8x6vfqp2bn"
+          "rev": "bcf818c2c7fc3f6650b2a9ad925bcbc0530e6ebb",
+          "sha256": "1h3b1ssnkfn65bnmng4s7h6dxj1b6lpfc40q2m8f0yvcpb86162z"
         },
         "chat": {
           "owner": "vercel",
           "repo": "chat",
-          "rev": "705f6ad973ace4d9f1ad23d8a369d78ba8a4e051",
-          "sha256": "03s3rm7y7wpwn8d2d0xgmjlcq97gg0hn3frfa2hz3xnrr885al5b"
+          "rev": "051245c4b0f6526464e496da7935bca212c667a5",
+          "sha256": "01qvi5h00qjc5yrjbc6acz9igh82v4fwx05w4igm94jxggg759dz"
         },
         "streamdown": {
           "owner": "vercel",
@@ -1652,8 +1670,8 @@
         "turbo": {
           "owner": "vercel",
           "repo": "turbo",
-          "rev": "3188a5662c7eb14eb49d443a9f3bc4d7ee176e4b",
-          "sha256": "1c6gl3plphc6gybmk6fwjj8rnnqwvr1k77vs6g5pm4izz1vx7mqr"
+          "rev": "90d1430f58a62f916dcd9f47c748f53087cd7613",
+          "sha256": "1hr7047b5pif42spi490ljccdmkrqanzbl82ab7pqflc494m2qbc"
         }
       },
       "vercel-labs": {
@@ -1672,8 +1690,8 @@
         "agent-browser": {
           "owner": "vercel-labs",
           "repo": "agent-browser",
-          "rev": "b02e485a37e60a9a564d8cf57a4f82ec06bddd4f",
-          "sha256": "0mzhcq5rjwav6l54y5x5lk8q3qbwi204zyqwm4rqrp5vjbjdfw7b"
+          "rev": "a884960806457c584e75b9c23a260922557b9936",
+          "sha256": "0bippprjw0gk65armh4qbvyrlx7djhkq2504fajcpjqi80sw5b4r"
         },
         "next-skills": {
           "owner": "vercel-labs",
@@ -1696,20 +1714,20 @@
         "next-browser": {
           "owner": "vercel-labs",
           "repo": "next-browser",
-          "rev": "59ffe8a8663f11b30bbbb31833a20eba4bafcff6",
-          "sha256": "02crmhykjwna9vskpnc4kwmzvniaal0xsqgy0mr5v1qwbcry2196"
+          "rev": "00d3386bbc672a7756b4351dc3fdf4e07d8cecf4",
+          "sha256": "19pgi5cpyfhm78a5mvbgzhmkjd29dbji64p5w2kcid0nxwflbppi"
         },
         "portless": {
           "owner": "vercel-labs",
           "repo": "portless",
-          "rev": "aec0dd7e16c7bfc1dd11a7d3a88cb236ea8612ae",
-          "sha256": "1d88is0jnw1jg9mdpf9d1gwyzgawvw6lbvjhw5hcgdkn5617wml1"
+          "rev": "0ddac0f9951ad18aeb918f3a3e5cfc3a7d04b330",
+          "sha256": "0mpg3mhmk0chf4xg5x44qycsazarphxylydn6k3rxcy9wngnvlz2"
         },
         "ai": {
           "owner": "vercel-labs",
           "repo": "ai",
-          "rev": "e7325dec24c62e833537d2ef9814da595e46def4",
-          "sha256": "1iwhamf0d6rab0ax25pk1jrsarrawpk8fkavil19s4xxvdibgymp"
+          "rev": "c1e4364558cf9201990e46f60c8ee3faa9578cd4",
+          "sha256": "1cly430h5c6sgqd6nmyz4yb2d5d49hipzznsx33wan6xv9azz0si"
         },
         "before-and-after": {
           "owner": "vercel-labs",
@@ -1795,17 +1813,17 @@
           "rev": "9fcf58550312d3eb517dd4a33111e5bb3c40ffdb",
           "sha256": "0hrp0sns2r05cldwmijdsqjkxz2vbpsczi57kr65mliiavfbaq59"
         },
-        "py-ai": {
-          "owner": "vercel-labs",
-          "repo": "py-ai",
-          "rev": "da7db9aafbd1908f84d9680f3140643e62e859ad",
-          "sha256": "0hmkmfpnnz4ijaca93yw7wilkf75ikan943dz179w3ls41x8w8g4"
-        },
         "opensrc": {
           "owner": "vercel-labs",
           "repo": "opensrc",
           "rev": "6c88b433bef6c737c9ec618f1a63cf99b6d84010",
           "sha256": "1h37j7767pb4kwfakrasl107wg9h61d8avzy9f1v26y58chzz3ak"
+        },
+        "py-ai": {
+          "owner": "vercel-labs",
+          "repo": "py-ai",
+          "rev": "da7db9aafbd1908f84d9680f3140643e62e859ad",
+          "sha256": "0hmkmfpnnz4ijaca93yw7wilkf75ikan943dz179w3ls41x8w8g4"
         },
         "skill-geist-learning-labs": {
           "owner": "vercel-labs",
@@ -1846,8 +1864,8 @@
         "open-agents": {
           "owner": "vercel-labs",
           "repo": "open-agents",
-          "rev": "eab74b1f05d0cf5faec6199b12f9b19a4b5c8402",
-          "sha256": "1c41xjzjizw0j50srjpvan9r03r7fz3gzdg3xszi61jyl22sc6av"
+          "rev": "83a214b2a478b9ca8eefdba5ffe43e636b216bfd",
+          "sha256": "04x2gfvd3z9hxi86df8ipwjhyrligzp11n0sx9ji86z43z9ha41m"
         }
       },
       "webflow": {
@@ -1863,8 +1881,8 @@
         "skills": {
           "owner": "wix",
           "repo": "skills",
-          "rev": "1b326fc7a6c44b09f5a7da08f6e01703f036ccb7",
-          "sha256": "1wf41nngj5qiibxw89qhi5llhdjwkjx4s7k9prlh57bwhyvfz0jh"
+          "rev": "b9a21910a25c56f8ee829f8c2c92c6af36dec26d",
+          "sha256": "1hyhmk73m51h8nvrm34vw26986p4qvx5lpxphkrm1qn6v4dnrcpw"
         }
       },
       "wordpress": {},
