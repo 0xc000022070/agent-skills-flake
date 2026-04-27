@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-04-27T02:15:01.583Z",
+  "updatedAt": "2026-04-27T03:52:17.760Z",
   "namespace": "skills-sh",
   "providers": {
     "official": {
@@ -1971,8 +1971,8 @@
         "agents": {
           "owner": "wshobson",
           "repo": "agents",
-          "rev": "27a7ed95755a5c3a2948694343a8e2cd7a7ef6fb",
-          "sha256": "0yzy16jjc384l31fg19kyzyw266nx58bcqn8f0axrmf1b85w9d28"
+          "rev": "adde832d8fc08cfb22ab44ec14661293c7ad9153",
+          "sha256": "0dxxr89z4l2kr557fl2q711npb1lxz9m3mna27znzix938av43k3"
         }
       }
     }
