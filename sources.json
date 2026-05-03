@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-05-03T04:01:28.367Z",
+  "updatedAt": "2026-05-03T12:59:32.354Z",
   "namespace": "skills-sh",
   "providers": {
     "official": {
@@ -682,8 +682,8 @@
         "xcodebuildmcp": {
           "owner": "getsentry",
           "repo": "xcodebuildmcp",
-          "rev": "28f725c9272cc8aaa82b258145535c9b806f34f3",
-          "sha256": "01d0qzp5dz7yhq2g7whfcr5cd9v91xlf0iq5rn8w44qqb1wjmpdp"
+          "rev": "b3908672a4dcb3fdb1d6cea03670436b9c44b8c9",
+          "sha256": "0gilkhj5p2a4lpx6g0xy7f0smjmf81nw8bc3g8i3qhriqzz9g8cc"
         },
         "cli": {
           "owner": "getsentry",
@@ -750,8 +750,8 @@
         "gh-aw": {
           "owner": "github",
           "repo": "gh-aw",
-          "rev": "8b3c96fbf83716a18c69962a34cc7016b150332f",
-          "sha256": "1ir77sl6iglr8wan6mlbdfm0jygy5iq0h140hyfaaxmzqh3drvhy"
+          "rev": "15b7dd5cf3fbd2e58e465c140bf0450a9659e95f",
+          "sha256": "0q4wni2p1g0jv230dmjpm8hfqjm1z1h50n0ibl7d5k3jdclpnyqa"
         },
         "copilot-plugins": {
           "owner": "github",
@@ -762,8 +762,8 @@
         "gh-aw-firewall": {
           "owner": "github",
           "repo": "gh-aw-firewall",
-          "rev": "bd3eb05eb9ae4fc5718b15329ccc92dfc5416b4e",
-          "sha256": "1sd8hxi5la1i6y06vpskgza6z70kqlv04xvr2s8dyyl04y2az434"
+          "rev": "d52513259b35a215a7be6811f3e821949366d2d6",
+          "sha256": "01b6mc8kkhikb4jxj4r4y1ijsqyyy5fnlj9f6ciwdlb2yhnldhak"
         },
         "copilot-cli-for-beginners": {
           "owner": "github",
@@ -836,8 +836,8 @@
         "skills": {
           "owner": "huggingface",
           "repo": "skills",
-          "rev": "35c1c60ce6c10c866bf4c53570658b51361e3616",
-          "sha256": "1jfhm32hq0hd3jm0mwrxpff0c3p4pkgrb8dpx660223sg47jiswh"
+          "rev": "6bbfb54f32e58b9661f725de865927a274f01776",
+          "sha256": "00klmiran7a4i55lb5gip58v490anfzmxkgkd8rzy132y6097cl9"
         },
         "kernels": {
           "owner": "huggingface",
@@ -1007,8 +1007,8 @@
         "mastra": {
           "owner": "mastra-ai",
           "repo": "mastra",
-          "rev": "758d40311bde852c327db3dfeaabcecf5e2a7c96",
-          "sha256": "1zw4qhvs5njh642chxxydnszmkpd6sf87v732did8b7sq50w7y77"
+          "rev": "560dd4f521246b988e1244e7691230ad61bc1501",
+          "sha256": "17bhf337fkp5fk6rk6wbmqknkqhnrlki0bc9mlby2mrz3p3xlhqc"
         }
       },
       "mcp-use": {
@@ -1061,8 +1061,8 @@
         "vscode": {
           "owner": "microsoft",
           "repo": "vscode",
-          "rev": "6bdca78690768ab87103dbccd0d4e1a2dbb3b686",
-          "sha256": "1ylqvpkg74i9bzxlqi6xxv65mhv69d4ax8z0whnyyl8wjrdf14qy"
+          "rev": "d6c8e297aaca24517348fc1af11517a49e544320",
+          "sha256": "03gq7bp5hv9dsqxl3gwaispv9whw1cgk5ffd8lyp8shy758y9yyq"
         },
         "playwright": {
           "owner": "microsoft",
@@ -1091,8 +1091,8 @@
         "hve-core": {
           "owner": "microsoft",
           "repo": "hve-core",
-          "rev": "5bedf808c31530e86dfe75d87900791ede3ce5ef",
-          "sha256": "0qrsql7zbcwq5zwnaiq7548ybssqgxisdddj6nzpw0y34k8p9w7k"
+          "rev": "57ea279d17424d8fabc4bafe13d793432242e31c",
+          "sha256": "1jbvaiczr6yq0ndwbq3qd1jpkj27xbpqbhxgmbf00a6fqf5yvabb"
         },
         "agent-framework": {
           "owner": "microsoft",
@@ -1175,8 +1175,8 @@
         "apm": {
           "owner": "microsoft",
           "repo": "apm",
-          "rev": "f88a11fd8c9bf68534f3878c2e73d65cea51824c",
-          "sha256": "0vr987cqbpdbnb6vwbmnnjsl73xz8arr07rhy9r73gnvgbn4iwsz"
+          "rev": "ba309470ba239f6162f20e60545d1cc9d42c3652",
+          "sha256": "0drgph9kxqn3ghjqvqkhh4si0a410g0ciiwwxgfqqf6jcfshbs6a"
         },
         "rushstack": {
           "owner": "microsoft",
@@ -1223,8 +1223,14 @@
         "agent-governance-toolkit": {
           "owner": "microsoft",
           "repo": "agent-governance-toolkit",
-          "rev": "c0b6cf2c9dc08eb85981623cbcb8adc5176f6d6c",
-          "sha256": "1z24960i5pn7ri44c595vkaml8il3jfxj9x751k6g9vbh4lkslv0"
+          "rev": "9a712cbb32f8994c433ebe82e77d8222c9a7a580",
+          "sha256": "1dmhp8y1fbk9v5n0smmgqliddvwavsgjpdyi0pw62v0l6g6ai2zj"
+        },
+        "aspire": {
+          "owner": "microsoft",
+          "repo": "aspire",
+          "rev": "c0639ac42ff037f9150ea8bfcfe79b34aadb4b6c",
+          "sha256": "0nwzhf6k99fzh6l5djir3mq3ls735xvgxhqaaif147rdbmmdim4v"
         },
         "agent365-devtools": {
           "owner": "microsoft",
@@ -1237,12 +1243,6 @@
           "repo": "vscode-pull-request-github",
           "rev": "4bdfe90fc8ef96dc2e5a2c7111a7ca203fe4ba66",
           "sha256": "1wvgr3sc840zibvqja10126ry2v9nvvwj55hhmgv92cwa9vzs877"
-        },
-        "aspire": {
-          "owner": "microsoft",
-          "repo": "aspire",
-          "rev": "c0639ac42ff037f9150ea8bfcfe79b34aadb4b6c",
-          "sha256": "0nwzhf6k99fzh6l5djir3mq3ls735xvgxhqaaif147rdbmmdim4v"
         }
       },
       "n8n-io": {},
@@ -1361,8 +1361,8 @@
         "skills": {
           "owner": "posthog",
           "repo": "skills",
-          "rev": "b52fe30b84844e43e3a37780e0ea5d465acc8308",
-          "sha256": "0mk95s9i4z17x4s431znpv9gfm7qc8r6vhz61l7zxdzywiswqnxm"
+          "rev": "53b41d461d820d68142be50f18dcd28463810505",
+          "sha256": "0cr743i6vskcgmpkgxk4ifckkbf5i9m9y58mj26wsqs4yk7wfg9p"
         },
         "posthog-for-claude": {
           "owner": "posthog",
@@ -1410,8 +1410,8 @@
         "pytorch": {
           "owner": "pytorch",
           "repo": "pytorch",
-          "rev": "2bece38c198292399fc47014330c75f47ad157e1",
-          "sha256": "0x4ikxm99jriadr1fn9ga6yggg2aima4crx1rws1ilpkagf3lyiw"
+          "rev": "021df83822aa0a40043eaf61bb95f673b714a542",
+          "sha256": "1h7jrg7hmz1a2i5qc65lz4y7bhksjq8fcy2hqjjpf789fhlq7381"
         }
       },
       "redis": {
@@ -1432,8 +1432,8 @@
         "skills": {
           "owner": "remotion-dev",
           "repo": "skills",
-          "rev": "514fcd25dd6d02af37ee2d20582df839bfa29066",
-          "sha256": "1la5g09v36r7ypn1mf6kp50mvy87jmyyf3c8kiw02c7zwwjxl7rp"
+          "rev": "2accec71ea1c28d36f8ab41e5f077b0729d9a88b",
+          "sha256": "0i6am78mswnir07ajyn85gz5pxy7yic45sl9wqv2667vljrg7zky"
         }
       },
       "resend": {
@@ -1760,8 +1760,8 @@
         "turborepo": {
           "owner": "vercel",
           "repo": "turborepo",
-          "rev": "3895eef67f08f04d90a6e381296bb78deae3ec1b",
-          "sha256": "0i7p7wccmcxjxla2dkrmz5f3iyficapxyg0h3b8knfzja89h1b7h"
+          "rev": "09900b9151a852a3fa289aee007b03cee1d32288",
+          "sha256": "13mzj9a5nsz28yq5l6lkwjg9akrjk5mjkykb76s8iiqq224w1cm3"
         },
         "ai-elements": {
           "owner": "vercel",
@@ -1787,17 +1787,17 @@
           "rev": "c1163eb146991a4924d80bcc9cfcc8bb89e05067",
           "sha256": "10y2nc681kcr4a16l2pa6j3nbap1022iqqkxzagqfv9lvl0j0rvz"
         },
-        "vercel": {
-          "owner": "vercel",
-          "repo": "vercel",
-          "rev": "bab5a600650aa9e4bfd2d6cda47593a548a52b84",
-          "sha256": "02y9pzh482nhj4kvqvk3dvx3mx1jkb71cmj1518fsbs7x7g6cn4b"
-        },
         "chat": {
           "owner": "vercel",
           "repo": "chat",
           "rev": "9824d3335eab0c651c80d32bbc42c9c83c4166b2",
           "sha256": "0hm2x3vf2znfyca8pi79vwjckaric1jqnq52s73fixyckn341p79"
+        },
+        "vercel": {
+          "owner": "vercel",
+          "repo": "vercel",
+          "rev": "bab5a600650aa9e4bfd2d6cda47593a548a52b84",
+          "sha256": "02y9pzh482nhj4kvqvk3dvx3mx1jkb71cmj1518fsbs7x7g6cn4b"
         },
         "streamdown": {
           "owner": "vercel",
@@ -1850,8 +1850,8 @@
         "turbo": {
           "owner": "vercel",
           "repo": "turbo",
-          "rev": "3895eef67f08f04d90a6e381296bb78deae3ec1b",
-          "sha256": "0i7p7wccmcxjxla2dkrmz5f3iyficapxyg0h3b8knfzja89h1b7h"
+          "rev": "09900b9151a852a3fa289aee007b03cee1d32288",
+          "sha256": "13mzj9a5nsz28yq5l6lkwjg9akrjk5mjkykb76s8iiqq224w1cm3"
         }
       },
       "vercel-labs": {
@@ -1996,8 +1996,8 @@
         "open-agents": {
           "owner": "vercel-labs",
           "repo": "open-agents",
-          "rev": "3012aabde878a5cc14e2de58f01cdcd8822d4978",
-          "sha256": "1jfz19iq5s1aykzdrfhrsig71zspiprd8wfpih5bm9kld7h0d81v"
+          "rev": "1cb9b8b556f49cb4d2571685fc4d416dc08c39a5",
+          "sha256": "16lxj88wb0crgfbxd67nwk5d8pzsbgx65663kgdr88dk5ysc6qxw"
         },
         "sitecore-skills": {
           "owner": "vercel-labs",
@@ -2067,8 +2067,8 @@
         "skills": {
           "owner": "wix",
           "repo": "skills",
-          "rev": "60a274fffe68eb7cdff76360141ab2ddea28b021",
-          "sha256": "1q96lfs0iik1nclc3bwv2ycwm02sdyccxfajkcc4vb2ivc64ccvq"
+          "rev": "788714fca087ef2ee2f7d75b0bbf27dfeb045956",
+          "sha256": "11yj4gfpjq0c4059v2zi6jsaw6w7h2b0rn3z5wxm2rhy8ch0dzr7"
         }
       },
       "wordpress": {},
